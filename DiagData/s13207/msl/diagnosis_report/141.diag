@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/141.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 96 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/141.fail
+ #failing_pat=88, #failures=96, #defects=2, #faults=4, CPU_time=0.14
+ Simulated : #failing_pat=88, #passing_pat=96, #failures=96
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=15, #passing_pat=169, #failures=15
+ ------------------------------------------------------------------------------
+ match=53.33%, #explained patterns: <failing=8, passing=169>
+ sa01   DS   g_g4868/ZN   (AND2_X1)
+ sa01   --   g_I9884/ZN   (INV_X1)
+ sa01   --   g_I9884/A   (INV_X1)
+ sa01   --   g_g5468/ZN   (INV_X1)
+ sa01   --   g_g5468/A   (INV_X1)
+ sa01   --   g_I10265/ZN   (INV_X1)
+ sa01   --   g_I10265/A   (INV_X1)
+ sa01   --   g_g5736/ZN   (INV_X1)
+ sa01   --   g_g5736/A   (INV_X1)
+ sa01   --   g_tmp_wire_34/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=53.33%, #explained patterns: <failing=8, passing=169>
+ sa01   DS   g_tmp_wire_34/Z   (MUX2_X1)
+ sa01   --   g_g1214/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=40.00%, #explained patterns: <failing=6, passing=169>
+ sa01   DS   g_g4868/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=81, #passing_pat=103, #failures=81
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=81, passing=103>
+ sa01   DS   g_g1378/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1411.diag

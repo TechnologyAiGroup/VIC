@@ -1,0 +1,17 @@
+run_diagnosis ./tmax_fail/1361.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 731 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1361.fail
+ #failing_pat=126, #failures=731, #defects=1, #faults=1, CPU_time=0.09
+ Simulated : #failing_pat=126, #passing_pat=96, #failures=731
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=121, #passing_pat=101, #failures=726
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=121, passing=101>
+ sa01   DS   g_I5989/ZN   (INV_X1)
+ sa01   --   g_I5989/A   (INV_X1)
+ sa01   --   g_g2246/ZN   (INV_X1)
+ sa01   --   g_g2246/A   (INV_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1363.diag

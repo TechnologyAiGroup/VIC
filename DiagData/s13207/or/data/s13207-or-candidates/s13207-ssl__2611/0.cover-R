@@ -1,0 +1,44 @@
+==
+Candidate 0
+site . I5435
+polarity . 1
+match_score . 100.0
+neighbor . g1461
+failing-states . 
+0 . 67
+passing-states . 
+1 . 123
+0 . 77
+==
+Candidate 1
+site . g1461->I5435
+polarity . 1
+match_score . 100.0
+neighbor . 
+failing-states . 
+ . 67
+passing-states . 
+ . 200
+==
+Candidate 2
+site . g1558
+polarity . 1
+match_score . 100.0
+neighbor . I5435
+failing-states . 
+1 . 67
+passing-states . 
+0 . 123
+1 . 77
+==
+Candidate 3
+site . I5435->g1558
+polarity . 1
+match_score . 100.0
+neighbor . g1461
+failing-states . 
+0 . 67
+passing-states . 
+1 . 123
+0 . 77
+==

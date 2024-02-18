@@ -1,0 +1,45 @@
+run_diagnosis ./tmax_fail/2483.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 6 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2483.fail
+ #failing_pat=6, #failures=6, #defects=1, #faults=6, CPU_time=0.05
+ Simulated : #failing_pat=6, #passing_pat=96, #failures=6
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=6, #failing_pat=5, #passing_pat=97, #failures=5
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=97>
+ sa01   DS   g_I8504/ZN   (NAND2_X1)
+ sa01   --   g_g4474/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=97>
+ sa01   DS   g_g4474/ZN   (NAND2_X1)
+ sa01   --   g_g6998/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=97>
+ sa01   DS   g_g6998/ZN   (AND2_X1)
+ sa01   --   g_g7146/ZN   (INV_X1)
+ sa01   --   g_g7146/A   (INV_X1)
+ sa01   --   g_I13441/ZN   (INV_X1)
+ sa01   --   g_I13441/A   (INV_X1)
+ sa01   --   g_g7341/ZN   (INV_X1)
+ sa01   --   g_g7341/A   (INV_X1)
+ sa01   --   g_I13713/ZN   (INV_X1)
+ sa01   --   g_I13713/A   (INV_X1)
+ sa01   --   g_g7511/ZN   (INV_X1)
+ sa01   --   g_g7511/A   (INV_X1)
+ sa01   --   g_tmp_wire_610/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=97>
+ sa01   DS   g_tmp_wire_610/Z   (MUX2_X1)
+ sa01   --   g_g809/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=97>
+ sa01   DS   g_g2038/ZN   (INV_X1)
+ sa01   --   g_g2038/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=3, passing=97>
+ sa01   DS   g_g2986/ZN   (AND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2484.diag

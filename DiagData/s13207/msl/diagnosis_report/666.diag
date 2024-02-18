@@ -1,0 +1,14 @@
+run_diagnosis ./tmax_fail/666.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 163 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/666.fail
+ #failing_pat=143, #failures=163, #defects=1, #faults=1, CPU_time=0.15
+ Simulated : #failing_pat=143, #passing_pat=96, #failures=163
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=143, #passing_pat=96, #failures=163
+ ------------------------------------------------------------------------------
+ match=85.03%, #explained patterns: <failing=138, passing=95>
+ sa01   DS   g_g734/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/667.diag

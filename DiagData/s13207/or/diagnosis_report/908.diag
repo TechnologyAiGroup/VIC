@@ -1,0 +1,53 @@
+run_diagnosis ./tmax_fail/908.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 178 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/908.fail
+ #failing_pat=66, #failures=178, #defects=4, #faults=6, CPU_time=0.31
+ Simulated : #failing_pat=66, #passing_pat=96, #failures=178
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=49, #passing_pat=113, #failures=49
+ ------------------------------------------------------------------------------
+ match=96.08%, #explained patterns: <failing=49, passing=112>
+ sa01   DS   g_g710/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=38, #passing_pat=124, #failures=38
+ ------------------------------------------------------------------------------
+ match=88.37%, #explained patterns: <failing=38, passing=122>
+ sa01   DS   g_g718/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 3: stuck fault model, #faults=1, #failing_pat=32, #passing_pat=130, #failures=32
+ ------------------------------------------------------------------------------
+ match=94.12%, #explained patterns: <failing=32, passing=128>
+ sa01   DS   g_g714/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 4: stuck fault model, #faults=3, #failing_pat=16, #passing_pat=146, #failures=16
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=146>
+ sa01   DS   g_g6447/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=146>
+ sa01   DS   g_g6964/ZN   (OR2_X1)
+ sa01   --   g_I13035/ZN   (INV_X1)
+ sa01   --   g_I13035/A   (INV_X1)
+ sa01   --   g_g7151/ZN   (INV_X1)
+ sa01   --   g_g7151/A   (INV_X1)
+ sa01   --   g_I13524/ZN   (INV_X1)
+ sa01   --   g_I13524/A   (INV_X1)
+ sa01   --   g_g7413/ZN   (INV_X1)
+ sa01   --   g_g7413/A   (INV_X1)
+ sa01   --   g_I13962/ZN   (INV_X1)
+ sa01   --   g_I13962/A   (INV_X1)
+ sa01   --   g_g7633/ZN   (INV_X1)
+ sa01   --   g_g7633/A   (INV_X1)
+ sa01   --   g_I14136/ZN   (INV_X1)
+ sa01   --   g_I14136/A   (INV_X1)
+ sa01   --   g_g7755/ZN   (INV_X1)
+ sa01   --   g_g7755/A   (INV_X1)
+ sa01   --   g_tmp_wire_584/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=146>
+ sa01   DS   g_g6447/ZN   (AND2_X1)
+ sa01   --   g_g6964/A1   (OR2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/909.diag

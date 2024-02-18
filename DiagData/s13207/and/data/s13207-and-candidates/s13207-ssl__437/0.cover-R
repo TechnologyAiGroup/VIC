@@ -1,0 +1,160 @@
+==
+Candidate 0
+site . g4263
+polarity . 1
+match_score . 75.0
+neighbor . g3260 g1435
+failing-states . 
+00 . 42
+01 . 47
+11 . 8
+passing-states . 
+01 . 40
+00 . 48
+10 . 42
+11 . 40
+==
+Candidate 1
+site . I9271
+polarity . 1
+match_score . 75.0
+neighbor . g4263
+failing-states . 
+1 . 97
+passing-states . 
+1 . 130
+0 . 40
+==
+Candidate 2
+site . g4263->I9271
+polarity . 1
+match_score . 75.0
+neighbor . g3260 g1435
+failing-states . 
+00 . 42
+01 . 47
+11 . 8
+passing-states . 
+01 . 40
+00 . 48
+10 . 42
+11 . 40
+==
+Candidate 3
+site . g4909
+polarity . 1
+match_score . 75.0
+neighbor . I9271
+failing-states . 
+0 . 97
+passing-states . 
+0 . 130
+1 . 40
+==
+Candidate 4
+site . I9271->g4909
+polarity . 1
+match_score . 75.0
+neighbor . g4263
+failing-states . 
+1 . 97
+passing-states . 
+1 . 130
+0 . 40
+==
+Candidate 5
+site . I9669
+polarity . 1
+match_score . 75.0
+neighbor . g4909
+failing-states . 
+1 . 97
+passing-states . 
+1 . 130
+0 . 40
+==
+Candidate 6
+site . g4909->I9669
+polarity . 1
+match_score . 75.0
+neighbor . I9271
+failing-states . 
+0 . 97
+passing-states . 
+0 . 130
+1 . 40
+==
+Candidate 7
+site . g5181
+polarity . 1
+match_score . 75.0
+neighbor . I9669
+failing-states . 
+0 . 97
+passing-states . 
+0 . 130
+1 . 40
+==
+Candidate 8
+site . I9669->g5181
+polarity . 1
+match_score . 75.0
+neighbor . g4909
+failing-states . 
+1 . 97
+passing-states . 
+1 . 130
+0 . 40
+==
+Candidate 9
+site . g1435->g4263
+polarity . 1
+match_score . 50.0
+neighbor . g3260 g1439
+failing-states . 
+00 . 39
+01 . 50
+11 . 4
+10 . 4
+passing-states . 
+01 . 57
+11 . 35
+10 . 47
+00 . 31
+==
+Candidate 10
+site . g3260->g4263
+polarity . 1
+match_score . 50.0
+neighbor . g1728 g3314 g3221 g2490 g1435
+failing-states . 
+00110 . 7
+00111 . 13
+00101 . 4
+11110 . 11
+10011 . 5
+01010 . 8
+01101 . 4
+10001 . 6
+00010 . 9
+01011 . 14
+11100 . 7
+01111 . 9
+passing-states . 
+00111 . 8
+10011 . 10
+01010 . 7
+01000 . 21
+11110 . 13
+10001 . 8
+01101 . 13
+01001 . 13
+00100 . 9
+00000 . 12
+11100 . 11
+00101 . 14
+00010 . 8
+01111 . 7
+00110 . 9
+01011 . 7
+==

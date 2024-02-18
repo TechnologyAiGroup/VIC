@@ -1,0 +1,74 @@
+run_diagnosis ./tmax_fail/2059.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 92 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2059.fail
+ #failing_pat=92, #failures=92, #defects=2, #faults=13, CPU_time=0.13
+ Simulated : #failing_pat=92, #passing_pat=96, #failures=92
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=12, #failing_pat=46, #passing_pat=142, #failures=46
+ ------------------------------------------------------------------------------
+ match=60.87%, #explained patterns: <failing=28, passing=142>
+ sa01   DS   g_g6284/ZN   (NAND2_X1)
+ sa01   --   g_I11781/ZN   (INV_X1)
+ sa01   --   g_I11781/A   (INV_X1)
+ sa01   --   g_g6587/ZN   (INV_X1)
+ sa01   --   g_g6587/A   (INV_X1)
+ sa01   --   g_I12493/ZN   (INV_X1)
+ sa01   --   g_I12493/A   (INV_X1)
+ sa01   --   g_g6874/ZN   (INV_X1)
+ sa01   --   g_g6874/A   (INV_X1)
+ sa01   --   g_tmp_wire_129/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=60.87%, #explained patterns: <failing=28, passing=142>
+ sa01   DS   g_I7864/ZN   (INV_X1)
+ sa01   --   g_I7864/A   (INV_X1)
+ sa01   --   g_g4079/ZN   (INV_X1)
+ sa01   --   g_g4079/A   (INV_X1)
+ sa01   --   g_g4898/ZN   (INV_X1)
+ sa01   --   g_g4898/A   (INV_X1)
+ sa01   --   g_g5469/ZN   (INV_X1)
+ sa01   --   g_g5469/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=58.70%, #explained patterns: <failing=27, passing=142>
+ sa01   DS   g_I11163/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=56.00%, #explained patterns: <failing=27, passing=142>
+ sa01   DS   g_g1750/ZN   (INV_X1)
+ sa01   --   g_g1750/A   (INV_X1)
+ sa01   --   g_g3812/ZN   (INV_X1)
+ sa01   --   g_g3812/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=23, passing=142>
+ sa01   DS   g_I11165/ZN   (NAND2_X1)
+ sa01   --   g_g6284/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=47.83%, #explained patterns: <failing=22, passing=142>
+ sa01   DS   g_I11165/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=47.83%, #explained patterns: <failing=22, passing=142>
+ sa01   DS   g_I11163/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=41.30%, #explained patterns: <failing=19, passing=142>
+ sa01   DS   g_I11164/ZN   (NAND2_X1)
+ sa01   --   g_g6284/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=39.13%, #explained patterns: <failing=18, passing=142>
+ sa01   DS   g_I11164/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=39.13%, #explained patterns: <failing=18, passing=142>
+ sa01   DS   g_I11163/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=21.74%, #explained patterns: <failing=10, passing=142>
+ sa01   DS   g_I11165/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=13.04%, #explained patterns: <failing=6, passing=142>
+ sa01   DS   g_I11164/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=46, #passing_pat=142, #failures=46
+ ------------------------------------------------------------------------------
+ match=93.88%, #explained patterns: <failing=46, passing=129>
+ sa01   DS   g_g1045/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/206.diag

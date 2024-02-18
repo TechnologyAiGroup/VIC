@@ -1,0 +1,43 @@
+run_diagnosis ./tmax_fail/1498.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1271 failures were checked
+ ./tmax_fail/1498.fail scan chain diagnosis results: #failing_patterns=266
+ ------------------------------------------------------------------------------
+ defect type=stuck-at-X
+ match=100.00% chain=s1 position=0 master=g_g746/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=1 master=g_g741/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=2 master=g_g889/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=3 master=g_g888/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=4 master=g_g887/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=5 master=g_g883/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=6 master=g_g921/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=7 master=g_g916/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=8 master=g_g911/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=9 master=g_g906/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=10 master=g_g901/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=11 master=g_g896/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=12 master=g_g891/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=13 master=g_g874/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=14 master=g_g871/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=15 master=g_g933/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=16 master=g_g929/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=17 master=g_g866/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=18 master=g_g875/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=19 master=g_g926/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=20 master=g_g878/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=21 master=g_g890/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=657 master=g_g11/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=658 master=g_g12/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=659 master=g_g22/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=660 master=g_g23/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=661 master=g_g24/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=662 master=g_g25/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=663 master=g_g26/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=664 master=g_g27/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=665 master=g_g28/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=666 master=g_g29/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=667 master=g_g30/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=668 master=g_g31/seq_DFF_X10 (seq_DFF_X1)
+ CPU_time=0.11 #sim_patterns=100 #sim_failures=464
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1499.diag

@@ -1,0 +1,55 @@
+run_diagnosis ./tmax_fail/1467.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 198 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1467.fail
+ #failing_pat=123, #failures=198, #defects=2, #faults=7, CPU_time=0.14
+ Simulated : #failing_pat=123, #passing_pat=96, #failures=198
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=123, #passing_pat=96, #failures=123
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=123, passing=96>
+ sa01   DS   g_I13084/ZN   (INV_X1)
+ sa01   --   g_I13084/A   (INV_X1)
+ sa01   --   g_g7176/ZN   (INV_X1)
+ sa01   --   g_g7176/A   (INV_X1)
+ sa01   --   g_I13326/ZN   (INV_X1)
+ sa01   --   g_I13326/A   (INV_X1)
+ sa01   --   g_g7298/ZN   (INV_X1)
+ sa01   --   g_g7298/A   (INV_X1)
+ sa01   --   g7298   (_PO)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=6, #failing_pat=75, #passing_pat=144, #failures=75
+ ------------------------------------------------------------------------------
+ match=56.82%, #explained patterns: <failing=75, passing=139>
+ sa01   DS   g_g973/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=21.11%, #explained patterns: <failing=19, passing=129>
+ sa1   DS   g_g4057/ZN   (INV_X1)
+ sa0   --   g_g4057/A   (INV_X1)
+ sa0   --   g_I7832/ZN   (INV_X1)
+ sa1   --   g_I7832/A   (INV_X1)
+ sa1   --   g_g2768/ZN   (AND2_X1)
+ sa1   --   g_g7136/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=21.11%, #explained patterns: <failing=19, passing=129>
+ sa1   DS   g_g7363/ZN   (OR2_X1)
+ sa1   --   g_g7363/A2   (OR2_X1)
+ sa1   --   g_g7363/A1   (OR2_X1)
+ sa1   --   g_g6903/ZN   (INV_X1)
+ sa0   --   g_g6903/A   (INV_X1)
+ sa1   --   g_g7136/ZN   (AND2_X1)
+ sa0   --   g_I12582/ZN   (INV_X1)
+ sa1   --   g_I12582/A   (INV_X1)
+ sa1   --   g_g7537/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=16.47%, #explained patterns: <failing=14, passing=134>
+ sa1   DS   g_g2768/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=15.46%, #explained patterns: <failing=15, passing=122>
+ sa1   DS   g_tmp_wire_223/S   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=6.25%, #explained patterns: <failing=5, passing=139>
+ sa1   DS   g_g2768/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1468.diag

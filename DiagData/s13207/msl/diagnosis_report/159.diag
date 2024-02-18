@@ -1,0 +1,47 @@
+run_diagnosis ./tmax_fail/159.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 30 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/159.fail
+ #failing_pat=30, #failures=30, #defects=2, #faults=7, CPU_time=0.11
+ Simulated : #failing_pat=30, #passing_pat=96, #failures=30
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=25, #passing_pat=101, #failures=25
+ ------------------------------------------------------------------------------
+ match=52.08%, #explained patterns: <failing=18, passing=82>
+ sa01   DS   g_g1288/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=6, #failing_pat=5, #passing_pat=121, #failures=5
+ ------------------------------------------------------------------------------
+ match=80.00%, #explained patterns: <failing=4, passing=121>
+ sa01   DS   g_g5615/ZN   (NOR2_X1)
+ sa01   --   g_g6196/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=80.00%, #explained patterns: <failing=4, passing=121>
+ sa01   DS   g_g6196/ZN   (AND2_X1)
+ sa01   --   g_g6457/A1   (OR3_X1)
+ ------------------------------------------------------------------------------
+ match=80.00%, #explained patterns: <failing=4, passing=121>
+ sa01   DS   g_g6457/ZN   (OR3_X1)
+ sa01   --   g_I12649/ZN   (INV_X1)
+ sa01   --   g_I12649/A   (INV_X1)
+ sa01   --   g_g6946/ZN   (INV_X1)
+ sa01   --   g_g6946/A   (INV_X1)
+ sa01   --   g_I12885/ZN   (INV_X1)
+ sa01   --   g_I12885/A   (INV_X1)
+ sa01   --   g_g7099/ZN   (INV_X1)
+ sa01   --   g_g7099/A   (INV_X1)
+ sa01   --   g_tmp_wire_664/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=80.00%, #explained patterns: <failing=4, passing=121>
+ sa01   DS   g_tmp_wire_664/Z   (MUX2_X1)
+ sa01   --   g_g887/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=60.00%, #explained patterns: <failing=3, passing=121>
+ sa01   DS   g_g4714/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=60.00%, #explained patterns: <failing=3, passing=121>
+ sa01   DS   g_g5615/A1   (NOR2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1590.diag

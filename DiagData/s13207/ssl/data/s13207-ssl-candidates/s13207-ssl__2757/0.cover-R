@@ -1,0 +1,156 @@
+==
+Candidate 0
+site . g6735
+polarity . 1
+match_score . 97.22
+neighbor . g6013 g4091
+failing-states . 
+00 . 68
+passing-states . 
+10 . 57
+00 . 142
+==
+Candidate 1
+site . I12771
+polarity . 1
+match_score . 97.22
+neighbor . g6735
+failing-states . 
+0 . 68
+passing-states . 
+1 . 57
+0 . 142
+==
+Candidate 2
+site . g6735->I12771
+polarity . 1
+match_score . 97.22
+neighbor . g6013 g4091
+failing-states . 
+00 . 68
+passing-states . 
+10 . 57
+00 . 142
+==
+Candidate 3
+site . g7019
+polarity . 1
+match_score . 97.22
+neighbor . I12771
+failing-states . 
+1 . 68
+passing-states . 
+0 . 57
+1 . 142
+==
+Candidate 4
+site . I12771->g7019
+polarity . 1
+match_score . 97.22
+neighbor . g6735
+failing-states . 
+0 . 68
+passing-states . 
+1 . 57
+0 . 142
+==
+Candidate 5
+site . I12930
+polarity . 1
+match_score . 97.22
+neighbor . g7019
+failing-states . 
+0 . 68
+passing-states . 
+1 . 57
+0 . 142
+==
+Candidate 6
+site . g7019->I12930
+polarity . 1
+match_score . 97.22
+neighbor . I12771
+failing-states . 
+1 . 68
+passing-states . 
+0 . 57
+1 . 142
+==
+Candidate 7
+site . g7114
+polarity . 1
+match_score . 97.22
+neighbor . I12930
+failing-states . 
+1 . 68
+passing-states . 
+0 . 57
+1 . 142
+==
+Candidate 8
+site . I12930->g7114
+polarity . 1
+match_score . 97.22
+neighbor . g7019
+failing-states . 
+0 . 68
+passing-states . 
+1 . 57
+0 . 142
+==
+Candidate 9
+site . g6013
+polarity . 1
+match_score . 83.33
+neighbor . g5589 g2424 g4091
+failing-states . 
+100 . 27
+000 . 41
+passing-states . 
+110 . 57
+000 . 34
+010 . 72
+100 . 36
+==
+Candidate 10
+site . g6013->g6735
+polarity . 1
+match_score . 83.33
+neighbor . g5589 g2424 g4091
+failing-states . 
+100 . 27
+000 . 41
+passing-states . 
+110 . 57
+000 . 34
+010 . 72
+100 . 36
+==
+Candidate 11
+site . g4091
+polarity . 1
+match_score . 80.56
+neighbor . g129 g3639 g6013
+failing-states . 
+110 . 68
+passing-states . 
+101 . 26
+010 . 70
+100 . 44
+001 . 31
+000 . 28
+==
+Candidate 12
+site . g4091->g6735
+polarity . 1
+match_score . 80.56
+neighbor . g129 g3639 g6013
+failing-states . 
+110 . 68
+passing-states . 
+101 . 26
+010 . 70
+100 . 44
+001 . 31
+000 . 28
+==

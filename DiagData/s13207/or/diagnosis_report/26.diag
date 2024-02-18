@@ -1,0 +1,51 @@
+run_diagnosis ./tmax_fail/26.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 22 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/26.fail
+ #failing_pat=22, #failures=22, #defects=3, #faults=9, CPU_time=0.08
+ Simulated : #failing_pat=22, #passing_pat=96, #failures=22
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=7, #failing_pat=1, #passing_pat=117, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=117>
+ sa1   DS   g_tmp_wire_202/A   (MUX2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=117>
+ sa1   DS   g_g1545/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=117>
+ sa1   DS   g_tmp_wire_202/Z   (MUX2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=117>
+ sa1   DS   g_I8939/A2   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=117>
+ sa1   DS   g_I8938/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=117>
+ sa0   DS   g_I8938/A1   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=117>
+ sa0   DS   g_I8938/A2   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=21, #passing_pat=97, #failures=21
+ ------------------------------------------------------------------------------
+ match=75.00%, #explained patterns: <failing=21, passing=74>
+ sa01   DS   g_g1102/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ Defect 3: transition fault model, #faults=1, #failing_pat=1, #passing_pat=117, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=117>
+ stf   DS   g_g1545/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/260.diag

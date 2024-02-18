@@ -1,0 +1,45 @@
+run_diagnosis ./tmax_fail/426.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 93 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/426.fail
+ #failing_pat=68, #failures=93, #defects=2, #faults=4, CPU_time=0.06
+ Simulated : #failing_pat=68, #passing_pat=96, #failures=93
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=26, #passing_pat=138, #failures=26
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=26, passing=172>
+ sa01   DS   g_g6458/ZN   (OR4_X1)
+ sa01   --   g_I12655/ZN   (INV_X1)
+ sa01   --   g_I12655/A   (INV_X1)
+ sa01   --   g_g6948/ZN   (INV_X1)
+ sa01   --   g_g6948/A   (INV_X1)
+ sa01   --   g_I12888/ZN   (INV_X1)
+ sa01   --   g_I12888/A   (INV_X1)
+ sa01   --   g_g7100/ZN   (INV_X1)
+ sa01   --   g_g7100/A   (INV_X1)
+ sa01   --   g_tmp_wire_665/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=26, passing=172>
+ sa01   DS   g_tmp_wire_665/Z   (MUX2_X1)
+ sa01   --   g_g888/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=2, #failing_pat=17, #passing_pat=147, #failures=17
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=17, passing=181>
+ sa01   DS   g_g6459/ZN   (OR3_X1)
+ sa01   --   g_I12659/ZN   (INV_X1)
+ sa01   --   g_I12659/A   (INV_X1)
+ sa01   --   g_g6950/ZN   (INV_X1)
+ sa01   --   g_g6950/A   (INV_X1)
+ sa01   --   g_I12891/ZN   (INV_X1)
+ sa01   --   g_I12891/A   (INV_X1)
+ sa01   --   g_g7101/ZN   (INV_X1)
+ sa01   --   g_g7101/A   (INV_X1)
+ sa01   --   g_tmp_wire_666/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=17, passing=181>
+ sa01   DS   g_tmp_wire_666/Z   (MUX2_X1)
+ sa01   --   g_g889/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/428.diag

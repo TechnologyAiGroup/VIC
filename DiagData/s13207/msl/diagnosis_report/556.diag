@@ -1,0 +1,43 @@
+run_diagnosis ./tmax_fail/556.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 168 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/556.fail
+ #failing_pat=102, #failures=168, #defects=2, #faults=7, CPU_time=0.66
+ Simulated : #failing_pat=102, #passing_pat=96, #failures=168
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=62, #passing_pat=136, #failures=62
+ ------------------------------------------------------------------------------
+ match=96.88%, #explained patterns: <failing=62, passing=134>
+ sa01   DS   g_g1369/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=6, #failing_pat=24, #passing_pat=174, #failures=25
+ ------------------------------------------------------------------------------
+ match=92.00%, #explained patterns: <failing=22, passing=174>
+ sa01   DS   g_I14019/ZN   (INV_X1)
+ sa01   --   g_I14019/A   (INV_X1)
+ sa01   --   g_g7714/ZN   (INV_X1)
+ sa01   --   g_g7714/A   (INV_X1)
+ sa01   --   g_I14070/ZN   (INV_X1)
+ sa01   --   g_I14070/A   (INV_X1)
+ sa01   --   g_g7733/ZN   (INV_X1)
+ sa01   --   g_g7733/A   (INV_X1)
+ sa01   --   g_tmp_wire_302/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=92.00%, #explained patterns: <failing=22, passing=174>
+ sa01   DS   g_tmp_wire_302/Z   (MUX2_X1)
+ sa01   --   g_g55/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=48.00%, #explained patterns: <failing=11, passing=174>
+ sa01   DS   g_I12834/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=44.00%, #explained patterns: <failing=10, passing=174>
+ sa01   DS   g_I13213/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=44.00%, #explained patterns: <failing=10, passing=174>
+ sa01   DS   g_I13214/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=36.00%, #explained patterns: <failing=9, passing=174>
+ sa01   DS   g_I12833/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/557.diag

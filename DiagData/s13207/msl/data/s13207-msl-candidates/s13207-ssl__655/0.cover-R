@@ -1,0 +1,47 @@
+==
+Candidate 0
+site . I5852
+polarity . 1
+match_score . 51.24
+neighbor . g1202
+failing-states . 
+1 . 92
+0 . 121
+passing-states . 
+1 . 54
+==
+Candidate 1
+site . g1202->I5852
+polarity . 1
+match_score . 51.24
+neighbor . 
+failing-states . 
+ . 213
+passing-states . 
+ . 54
+==
+Candidate 2
+site . g2016
+polarity . 1
+match_score . 51.24
+neighbor . I6842 I5852 g205
+failing-states . 
+100 . 41
+110 . 60
+011 . 61
+001 . 51
+passing-states . 
+001 . 24
+100 . 30
+==
+Candidate 3
+site . I5852->g2016
+polarity . 1
+match_score . 51.24
+neighbor . g1202
+failing-states . 
+1 . 92
+0 . 121
+passing-states . 
+1 . 54
+==

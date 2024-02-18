@@ -1,0 +1,37 @@
+run_diagnosis ./tmax_fail/2449.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 74 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2449.fail
+ #failing_pat=74, #failures=74, #defects=2, #faults=3, CPU_time=0.11
+ Simulated : #failing_pat=74, #passing_pat=96, #failures=74
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=25, #passing_pat=145, #failures=25
+ ------------------------------------------------------------------------------
+ match=68.00%, #explained patterns: <failing=17, passing=145>
+ sa01   DS   g_g7832/ZN   (AND2_X1)
+ sa01   --   g_I14614/ZN   (INV_X1)
+ sa01   --   g_I14614/A   (INV_X1)
+ sa01   --   g_g8406/ZN   (INV_X1)
+ sa01   --   g_g8406/A   (INV_X1)
+ sa01   --   g_I14964/ZN   (INV_X1)
+ sa01   --   g_I14964/A   (INV_X1)
+ sa01   --   g_g8774/ZN   (INV_X1)
+ sa01   --   g_g8774/A   (INV_X1)
+ sa01   --   g_I15193/ZN   (INV_X1)
+ sa01   --   g_I15193/A   (INV_X1)
+ sa01   --   g_g8869/ZN   (INV_X1)
+ sa01   --   g_g8869/A   (INV_X1)
+ sa01   --   g_tmp_wire_238/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=56.00%, #explained patterns: <failing=14, passing=145>
+ sa01   DS   g_g5343/ZN   (OR2_X1)
+ sa01   --   g_g7832/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=49, #passing_pat=121, #failures=49
+ ------------------------------------------------------------------------------
+ match=98.00%, #explained patterns: <failing=48, passing=121>
+ sa01   DS   g_g567/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/245.diag

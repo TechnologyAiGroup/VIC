@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/1530.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 40 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1530.fail
+ #failing_pat=40, #failures=40, #defects=2, #faults=4, CPU_time=0.15
+ Simulated : #failing_pat=40, #passing_pat=96, #failures=40
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=35, #passing_pat=101, #failures=35
+ ------------------------------------------------------------------------------
+ match=94.59%, #explained patterns: <failing=35, passing=99>
+ sa01   DS   g_g1069/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=3, #failing_pat=5, #passing_pat=131, #failures=5
+ ------------------------------------------------------------------------------
+ match=60.00%, #explained patterns: <failing=3, passing=131>
+ sa01   DS   g_g4937/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=60.00%, #explained patterns: <failing=3, passing=131>
+ sa01   DS   g_g4937/ZN   (AND2_X1)
+ sa01   --   g_g6457/A3   (OR3_X1)
+ ------------------------------------------------------------------------------
+ match=60.00%, #explained patterns: <failing=3, passing=131>
+ sa01   DS   g_g6457/ZN   (OR3_X1)
+ sa01   --   g_I12649/ZN   (INV_X1)
+ sa01   --   g_I12649/A   (INV_X1)
+ sa01   --   g_g6946/ZN   (INV_X1)
+ sa01   --   g_g6946/A   (INV_X1)
+ sa01   --   g_I12885/ZN   (INV_X1)
+ sa01   --   g_I12885/A   (INV_X1)
+ sa01   --   g_g7099/ZN   (INV_X1)
+ sa01   --   g_g7099/A   (INV_X1)
+ sa01   --   g_tmp_wire_664/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1532.diag

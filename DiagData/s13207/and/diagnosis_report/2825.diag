@@ -1,0 +1,40 @@
+run_diagnosis ./tmax_fail/2825.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 63 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2825.fail
+ #failing_pat=63, #failures=63, #defects=2, #faults=5, CPU_time=0.11
+ Simulated : #failing_pat=63, #passing_pat=96, #failures=63
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=47, #passing_pat=112, #failures=47
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=47, passing=112>
+ sa01   DS   g_g518/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=4, #failing_pat=16, #passing_pat=143, #failures=16
+ ------------------------------------------------------------------------------
+ match=62.50%, #explained patterns: <failing=10, passing=143>
+ sa01   DS   g_g5052/ZN   (OR2_X1)
+ sa01   --   g_I9929/ZN   (INV_X1)
+ sa01   --   g_I9929/A   (INV_X1)
+ sa01   --   g_g5519/ZN   (INV_X1)
+ sa01   --   g_g5519/A   (INV_X1)
+ sa01   --   g_I10286/ZN   (INV_X1)
+ sa01   --   g_I10286/A   (INV_X1)
+ sa01   --   g_g5743/ZN   (INV_X1)
+ sa01   --   g_g5743/A   (INV_X1)
+ sa01   --   g_tmp_wire_111/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=62.50%, #explained patterns: <failing=10, passing=143>
+ sa01   DS   g_tmp_wire_111/Z   (MUX2_X1)
+ sa01   --   g_g1317/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=8, passing=143>
+ sa01   DS   g_g4054/ZN   (AND2_X1)
+ sa01   --   g_g5052/A2   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=43.75%, #explained patterns: <failing=7, passing=143>
+ sa01   DS   g_g4049/ZN   (AND2_X1)
+ sa01   --   g_g5052/A1   (OR2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2826.diag

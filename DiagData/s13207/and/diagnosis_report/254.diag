@@ -1,0 +1,39 @@
+run_diagnosis ./tmax_fail/254.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 40 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/254.fail
+ #failing_pat=40, #failures=40, #defects=2, #faults=5, CPU_time=0.12
+ Simulated : #failing_pat=40, #passing_pat=96, #failures=40
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=28, #passing_pat=108, #failures=28
+ ------------------------------------------------------------------------------
+ match=96.55%, #explained patterns: <failing=27, passing=108>
+ sa01   DS   g_g1380/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=4, #failing_pat=12, #passing_pat=124, #failures=12
+ ------------------------------------------------------------------------------
+ match=66.67%, #explained patterns: <failing=8, passing=124>
+ sa01   DS   g_g6169/ZN   (NAND2_X1)
+ sa01   --   g_I11815/ZN   (INV_X1)
+ sa01   --   g_I11815/A   (INV_X1)
+ sa01   --   g_g6603/ZN   (INV_X1)
+ sa01   --   g_g6603/A   (INV_X1)
+ sa01   --   g_I12478/ZN   (INV_X1)
+ sa01   --   g_I12478/A   (INV_X1)
+ sa01   --   g_g6869/ZN   (INV_X1)
+ sa01   --   g_g6869/A   (INV_X1)
+ sa01   --   g_tmp_wire_132/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=66.67%, #explained patterns: <failing=8, passing=124>
+ sa01   DS   g_I10866/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=58.33%, #explained patterns: <failing=7, passing=124>
+ sa01   DS   g_I10867/ZN   (NAND2_X1)
+ sa01   --   g_g6169/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=58.33%, #explained patterns: <failing=7, passing=124>
+ sa01   DS   g_I10866/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2540.diag

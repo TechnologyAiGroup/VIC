@@ -1,0 +1,37 @@
+==
+Candidate 0
+site . g3310
+polarity . 1
+match_score . 50.0
+neighbor . g936 g3466 g2496 g2557
+failing-states . 
+1000 . 25
+1010 . 23
+0000 . 18
+1101 . 20
+0011 . 14
+1111 . 20
+0010 . 4
+0001 . 8
+passing-states . 
+0001 . 11
+1000 . 29
+0011 . 13
+1101 . 25
+1010 . 16
+0000 . 19
+0010 . 14
+1111 . 8
+==
+Candidate 1
+site . g936->g3310
+polarity . 1
+match_score . 35.0
+neighbor . g2557
+failing-states . 
+0 . 70
+1 . 62
+passing-states . 
+1 . 57
+0 . 78
+==

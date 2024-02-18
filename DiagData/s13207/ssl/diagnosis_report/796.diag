@@ -1,0 +1,24 @@
+run_diagnosis ./tmax_fail/796.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1218 failures were checked
+ ./tmax_fail/796.fail scan chain diagnosis results: #failing_patterns=134
+ ------------------------------------------------------------------------------
+ defect type=stuck-at-X
+ match=100.00% chain=s1 position=655 master=g_g8/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=656 master=g_g9/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=657 master=g_g11/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=658 master=g_g12/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=659 master=g_g22/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=660 master=g_g23/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=661 master=g_g24/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=662 master=g_g25/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=663 master=g_g26/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=664 master=g_g27/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=665 master=g_g28/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=666 master=g_g29/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=667 master=g_g30/seq_DFF_X10 (seq_DFF_X1)
+ match=100.00% chain=s1 position=668 master=g_g31/seq_DFF_X10 (seq_DFF_X1)
+ CPU_time=0.02 #sim_patterns=100 #sim_failures=906
+ Warning: 133 passing patterns were ignored during chain diagnosis (pat1=3). (M633)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/797.diag

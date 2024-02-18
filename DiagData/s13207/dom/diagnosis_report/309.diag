@@ -1,0 +1,13 @@
+run_diagnosis ./tmax_fail/309.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 936 failures were checked
+ ./tmax_fail/309.fail scan chain diagnosis results: #failing_patterns=133
+ ------------------------------------------------------------------------------
+ defect type=stuck-at-X
+ match=98.37% chain=s1 position=427 master=g_g1033/seq_DFF_X10 (seq_DFF_X1)
+ match=96.91% chain=s1 position=426 master=g_g1034/seq_DFF_X10 (seq_DFF_X1)
+ match=96.91% chain=s1 position=428 master=g_g1025/seq_DFF_X10 (seq_DFF_X1)
+ CPU_time=0.08 #sim_patterns=100 #sim_failures=551
+ Warning: 134 passing patterns were ignored during chain diagnosis (pat1=2). (M633)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/310.diag

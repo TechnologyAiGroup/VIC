@@ -1,0 +1,36 @@
+run_diagnosis ./tmax_fail/1394.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 102 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1394.fail
+ #failing_pat=102, #failures=102, #defects=2, #faults=3, CPU_time=0.10
+ Simulated : #failing_pat=102, #passing_pat=96, #failures=102
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=96, #passing_pat=102, #failures=96
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=96, passing=102>
+ sa01   DS   g_g1386/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=2, #failing_pat=6, #passing_pat=192, #failures=6
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=192>
+ sa01   DS   g_g7002/ZN   (AND2_X1)
+ sa01   --   g_I13189/ZN   (INV_X1)
+ sa01   --   g_I13189/A   (INV_X1)
+ sa01   --   g_g7243/ZN   (INV_X1)
+ sa01   --   g_g7243/A   (INV_X1)
+ sa01   --   g_I13635/ZN   (INV_X1)
+ sa01   --   g_I13635/A   (INV_X1)
+ sa01   --   g_g7479/ZN   (INV_X1)
+ sa01   --   g_g7479/A   (INV_X1)
+ sa01   --   g_I13764/ZN   (INV_X1)
+ sa01   --   g_I13764/A   (INV_X1)
+ sa01   --   g_g7528/ZN   (INV_X1)
+ sa01   --   g_g7528/A   (INV_X1)
+ sa01   --   g_tmp_wire_72/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=192>
+ sa01   DS   g_tmp_wire_72/Z   (MUX2_X1)
+ sa01   --   g_g1345/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1395.diag

@@ -1,0 +1,71 @@
+run_diagnosis ./tmax_fail/1400.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 269 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1400.fail
+ #failing_pat=134, #failures=269, #defects=2, #faults=11, CPU_time=0.15
+ Simulated : #failing_pat=134, #passing_pat=96, #failures=269
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=134, #passing_pat=96, #failures=268
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=134, passing=96>
+ sa01   DS   g_I8543/ZN   (INV_X1)
+ sa01   --   g_I8543/A   (INV_X1)
+ sa01   --   g_g4493/ZN   (INV_X1)
+ sa01   --   g_g4493/A   (INV_X1)
+ sa01   --   g_I9336/ZN   (INV_X1)
+ sa01   --   g_I9336/A   (INV_X1)
+ sa01   --   g_g5007/ZN   (INV_X1)
+ sa01   --   g_g5007/A   (INV_X1)
+ sa01   --   g_I10151/ZN   (INV_X1)
+ sa01   --   g_I10151/A   (INV_X1)
+ sa01   --   g_g5668/ZN   (INV_X1)
+ sa01   --   g_g5668/A   (INV_X1)
+ sa01   --   g_I10933/ZN   (INV_X1)
+ sa01   --   g_I10933/A   (INV_X1)
+ sa01   --   g_g6190/ZN   (INV_X1)
+ sa01   --   g_g6190/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=10, #failing_pat=1, #passing_pat=229, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=229>
+ sa1   DS   g_I8605/A2   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=229>
+ sa0   DS   g_g4888/A2   (NOR4_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=229>
+ sa0   DS   g_I8606/A2   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=229>
+ sa0   DS   g_I8606/A1   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=229>
+ sa1   DS   g_I8606/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=229>
+ sa0   DS   g_tmp_wire_125/A   (MUX2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=229>
+ sa0   DS   g_I6323/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=229>
+ sa0   DS   g_g2487/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=229>
+ sa1   DS   g_g2487/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=229>
+ sa1   DS   g_I6323/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1401.diag

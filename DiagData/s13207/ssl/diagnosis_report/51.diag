@@ -1,0 +1,41 @@
+run_diagnosis ./tmax_fail/51.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 204 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/51.fail
+ #failing_pat=154, #failures=204, #defects=2, #faults=3, CPU_time=0.08
+ Simulated : #failing_pat=154, #passing_pat=96, #failures=204
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=51, #passing_pat=199, #failures=51
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=51, passing=270>
+ sa01   DS   g_g4868/ZN   (AND2_X1)
+ sa01   --   g_I9884/ZN   (INV_X1)
+ sa01   --   g_I9884/A   (INV_X1)
+ sa01   --   g_g5468/ZN   (INV_X1)
+ sa01   --   g_g5468/A   (INV_X1)
+ sa01   --   g_I10265/ZN   (INV_X1)
+ sa01   --   g_I10265/A   (INV_X1)
+ sa01   --   g_g5736/ZN   (INV_X1)
+ sa01   --   g_g5736/A   (INV_X1)
+ sa01   --   g_tmp_wire_34/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=51, passing=270>
+ sa01   DS   g_tmp_wire_34/Z   (MUX2_X1)
+ sa01   --   g_g1214/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=47, #passing_pat=203, #failures=47
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=47, passing=274>
+ sa01   DS   g_g6577/ZN   (AND2_X1)
+ sa01   --   g_I12757/ZN   (INV_X1)
+ sa01   --   g_I12757/A   (INV_X1)
+ sa01   --   g_g7013/ZN   (INV_X1)
+ sa01   --   g_g7013/A   (INV_X1)
+ sa01   --   g_I12918/ZN   (INV_X1)
+ sa01   --   g_I12918/A   (INV_X1)
+ sa01   --   g_g7110/ZN   (INV_X1)
+ sa01   --   g_g7110/A   (INV_X1)
+ sa01   --   g_tmp_wire_43/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/510.diag

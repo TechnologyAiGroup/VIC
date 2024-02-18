@@ -1,0 +1,27 @@
+run_diagnosis ./tmax_fail/1345.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 37 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1345.fail
+ #failing_pat=37, #failures=37, #defects=1, #faults=1, CPU_time=0.09
+ Simulated : #failing_pat=37, #passing_pat=96, #failures=37
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=36, #passing_pat=97, #failures=36
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=36, passing=97>
+ sa01   DS   g_g8627/ZN   (NAND2_X1)
+ sa01   --   g_I15007/ZN   (INV_X1)
+ sa01   --   g_I15007/A   (INV_X1)
+ sa01   --   g_g8799/ZN   (INV_X1)
+ sa01   --   g_g8799/A   (INV_X1)
+ sa01   --   g_I15308/ZN   (INV_X1)
+ sa01   --   g_I15308/A   (INV_X1)
+ sa01   --   g_g8898/ZN   (INV_X1)
+ sa01   --   g_g8898/A   (INV_X1)
+ sa01   --   g_I15388/ZN   (INV_X1)
+ sa01   --   g_I15388/A   (INV_X1)
+ sa01   --   g_g8958/ZN   (INV_X1)
+ sa01   --   g_g8958/A   (INV_X1)
+ sa01   --   g8958   (_PO)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1346.diag

@@ -1,0 +1,30 @@
+run_diagnosis ./tmax_fail/1454.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 69 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1454.fail
+ #failing_pat=69, #failures=69, #defects=1, #faults=3, CPU_time=0.03
+ Simulated : #failing_pat=69, #passing_pat=96, #failures=69
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=36, #passing_pat=129, #failures=36
+ ------------------------------------------------------------------------------
+ match=88.89%, #explained patterns: <failing=32, passing=129>
+ sa01   DS   g_g7017/ZN   (AND2_X1)
+ sa01   --   g_I13134/ZN   (INV_X1)
+ sa01   --   g_I13134/A   (INV_X1)
+ sa01   --   g_g7206/ZN   (INV_X1)
+ sa01   --   g_g7206/A   (INV_X1)
+ sa01   --   g_I13335/ZN   (INV_X1)
+ sa01   --   g_I13335/A   (INV_X1)
+ sa01   --   g_g7301/ZN   (INV_X1)
+ sa01   --   g_g7301/A   (INV_X1)
+ sa01   --   g_tmp_wire_54/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=88.89%, #explained patterns: <failing=32, passing=129>
+ sa01   DS   g_tmp_wire_54/Z   (MUX2_X1)
+ sa01   --   g_g1284/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=66.67%, #explained patterns: <failing=24, passing=129>
+ sa01   DS   g_g7017/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1458.diag

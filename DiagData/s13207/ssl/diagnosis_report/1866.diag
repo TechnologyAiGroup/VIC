@@ -1,0 +1,50 @@
+run_diagnosis ./tmax_fail/1866.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 39 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1866.fail
+ #failing_pat=39, #failures=39, #defects=1, #faults=8, CPU_time=0.03
+ Simulated : #failing_pat=39, #passing_pat=96, #failures=39
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=8, #failing_pat=21, #passing_pat=114, #failures=21
+ ------------------------------------------------------------------------------
+ match=90.48%, #explained patterns: <failing=19, passing=114>
+ sa01   DS   g_g3658/ZN   (NAND2_X1)
+ sa01   --   g_g6994/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=90.48%, #explained patterns: <failing=19, passing=114>
+ sa01   DS   g_g6994/ZN   (AND2_X1)
+ sa01   --   g_g7324/A2   (NOR2_X1)
+ ------------------------------------------------------------------------------
+ match=90.48%, #explained patterns: <failing=19, passing=114>
+ sa01   DS   g_g7324/ZN   (NOR2_X1)
+ sa01   --   g_I13837/ZN   (INV_X1)
+ sa01   --   g_I13837/A   (INV_X1)
+ sa01   --   g_g7551/ZN   (INV_X1)
+ sa01   --   g_g7551/A   (INV_X1)
+ sa01   --   g_I14142/ZN   (INV_X1)
+ sa01   --   g_I14142/A   (INV_X1)
+ sa01   --   g_g7757/ZN   (INV_X1)
+ sa01   --   g_g7757/A   (INV_X1)
+ sa01   --   g_tmp_wire_608/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=90.48%, #explained patterns: <failing=19, passing=114>
+ sa01   DS   g_tmp_wire_608/Z   (MUX2_X1)
+ sa01   --   g_g803/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=90.48%, #explained patterns: <failing=19, passing=114>
+ sa01   DS   g_g1974/ZN   (INV_X1)
+ sa01   --   g_g1974/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=76.19%, #explained patterns: <failing=16, passing=114>
+ sa01   DS   g_I7149/ZN   (NAND2_X1)
+ sa01   --   g_g3658/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=66.67%, #explained patterns: <failing=14, passing=114>
+ sa01   DS   g_I7150/ZN   (NAND2_X1)
+ sa01   --   g_g3658/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=66.67%, #explained patterns: <failing=14, passing=114>
+ sa01   DS   g_I7148/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1868.diag

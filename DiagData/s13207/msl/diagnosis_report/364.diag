@@ -1,0 +1,89 @@
+run_diagnosis ./tmax_fail/364.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1372 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/364.fail
+ #failing_pat=255, #failures=1372, #defects=1, #faults=16, CPU_time=0.15
+ Simulated : #failing_pat=255, #passing_pat=12, #failures=1372
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=16, #failing_pat=226, #passing_pat=41, #failures=452
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_I13031/ZN   (INV_X1)
+ sa01   --   g_I13031/A   (INV_X1)
+ sa01   --   g_g7149/ZN   (INV_X1)
+ sa01   --   g_g7149/A   (INV_X1)
+ sa01   --   g_I13388/ZN   (INV_X1)
+ sa01   --   g_I13388/A   (INV_X1)
+ sa01   --   g_g7320/ZN   (INV_X1)
+ sa01   --   g_g7320/A   (INV_X1)
+ sa01   --   g_I13807/ZN   (INV_X1)
+ sa01   --   g_I13807/A   (INV_X1)
+ sa01   --   g_g7541/ZN   (INV_X1)
+ sa01   --   g_g7541/A   (INV_X1)
+ sa01   --   g_I14251/ZN   (INV_X1)
+ sa01   --   g_I14251/A   (INV_X1)
+ sa01   --   g_g7829/ZN   (INV_X1)
+ sa01   --   g_g7829/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_g7541/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_g7541/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_I14251/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_I14251/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_g7829/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_I13807/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_I13807/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_g7320/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_g7320/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_I13388/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_I13388/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_g7149/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_g7149/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_I13031/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=84.96%, #explained patterns: <failing=226, passing=41>
+ sa01   DS   g_I13031/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/365.diag

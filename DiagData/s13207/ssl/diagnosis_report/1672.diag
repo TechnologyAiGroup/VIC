@@ -1,0 +1,32 @@
+run_diagnosis ./tmax_fail/1672.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 298 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1672.fail
+ #failing_pat=149, #failures=298, #defects=1, #faults=2, CPU_time=0.03
+ Simulated : #failing_pat=149, #passing_pat=96, #failures=298
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=86, #passing_pat=159, #failures=159
+ ------------------------------------------------------------------------------
+ match=90.57%, #explained patterns: <failing=71, passing=159>
+ sa01   DS   g_g24/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=89.31%, #explained patterns: <failing=71, passing=159>
+ sa01   DS   g_g2457/ZN   (INV_X1)
+ sa01   --   g_g2457/A   (INV_X1)
+ sa01   --   g_I7061/ZN   (INV_X1)
+ sa01   --   g_I7061/A   (INV_X1)
+ sa01   --   g_g3589/ZN   (INV_X1)
+ sa01   --   g_g3589/A   (INV_X1)
+ sa01   --   g_I7545/ZN   (INV_X1)
+ sa01   --   g_I7545/A   (INV_X1)
+ sa01   --   g_g3916/ZN   (INV_X1)
+ sa01   --   g_g3916/A   (INV_X1)
+ sa01   --   g_I9419/ZN   (INV_X1)
+ sa01   --   g_I9419/A   (INV_X1)
+ sa01   --   g_g5059/ZN   (INV_X1)
+ sa01   --   g_g5059/A   (INV_X1)
+ sa01   --   g_g5445/ZN   (INV_X1)
+ sa01   --   g_g5445/A   (INV_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1674.diag

@@ -1,0 +1,33 @@
+run_diagnosis ./tmax_fail/1931.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 336 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1931.fail
+ #failing_pat=229, #failures=336, #defects=2, #faults=2, CPU_time=0.12
+ Simulated : #failing_pat=229, #passing_pat=38, #failures=336
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=206, #passing_pat=61, #failures=206
+ ------------------------------------------------------------------------------
+ match=96.26%, #explained patterns: <failing=204, passing=61>
+ sa01   DS   g_g863/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=130, #passing_pat=137, #failures=130
+ ------------------------------------------------------------------------------
+ match=48.87%, #explained patterns: <failing=130, passing=1>
+ sa0   DS   g7294   (_PO)
+ sa0   --   g_g7294/ZN   (INV_X1)
+ sa1   --   g_g7294/A   (INV_X1)
+ sa1   --   g_I13314/ZN   (INV_X1)
+ sa0   --   g_I13314/A   (INV_X1)
+ sa0   --   g_g7160/ZN   (INV_X1)
+ sa1   --   g_g7160/A   (INV_X1)
+ sa1   --   g_I13054/ZN   (INV_X1)
+ sa0   --   g_I13054/A   (INV_X1)
+ sa0   --   g_g6960/ZN   (INV_X1)
+ sa1   --   g_g6960/A   (INV_X1)
+ sa1   --   g_I12681/ZN   (INV_X1)
+ sa0   --   g_I12681/A   (INV_X1)
+ sa0   --   g_g6469/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1932.diag

@@ -1,0 +1,37 @@
+run_diagnosis ./tmax_fail/179.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 400 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/179.fail
+ #failing_pat=199, #failures=400, #defects=2, #faults=3, CPU_time=0.14
+ Simulated : #failing_pat=199, #passing_pat=68, #failures=400
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=144, #passing_pat=123, #failures=144
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=144, passing=123>
+ sa01   DS   g_g1372/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=2, #failing_pat=128, #passing_pat=139, #failures=256
+ ------------------------------------------------------------------------------
+ match=75.78%, #explained patterns: <failing=66, passing=139>
+ sa01   DS   g_g25/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=51.56%, #explained patterns: <failing=66, passing=139>
+ sa01   DS   g_g2477/ZN   (INV_X1)
+ sa01   --   g_g2477/A   (INV_X1)
+ sa01   --   g_I7098/ZN   (INV_X1)
+ sa01   --   g_I7098/A   (INV_X1)
+ sa01   --   g_g3631/ZN   (INV_X1)
+ sa01   --   g_g3631/A   (INV_X1)
+ sa01   --   g_I7623/ZN   (INV_X1)
+ sa01   --   g_I7623/A   (INV_X1)
+ sa01   --   g_g3940/ZN   (INV_X1)
+ sa01   --   g_g3940/A   (INV_X1)
+ sa01   --   g_I9457/ZN   (INV_X1)
+ sa01   --   g_I9457/A   (INV_X1)
+ sa01   --   g_g5085/ZN   (INV_X1)
+ sa01   --   g_g5085/A   (INV_X1)
+ sa01   --   g_g5463/ZN   (INV_X1)
+ sa01   --   g_g5463/A   (INV_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1790.diag

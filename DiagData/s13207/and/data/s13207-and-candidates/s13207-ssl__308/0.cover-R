@@ -1,0 +1,185 @@
+==
+Candidate 0
+site . g7069
+polarity . 1
+match_score . 70.0
+neighbor . g6680 g7257 I13638 g5435
+failing-states . 
+0011 . 6
+1011 . 7
+0010 . 10
+1100 . 13
+1010 . 9
+1111 . 13
+0100 . 4
+0101 . 4
+passing-states . 
+1010 . 40
+1111 . 39
+1011 . 44
+0010 . 11
+1100 . 33
+0011 . 11
+0101 . 10
+0100 . 13
+==
+Candidate 1
+site . g6695
+polarity . 1
+match_score . 70.0
+neighbor . g6701 I12016 I12017 I12852
+failing-states . 
+1010 . 14
+0011 . 12
+0101 . 8
+1111 . 13
+0111 . 13
+1100 . 6
+passing-states . 
+1010 . 25
+1111 . 49
+0111 . 47
+0011 . 23
+0101 . 28
+1100 . 29
+==
+Candidate 2
+site . g6701
+polarity . 1
+match_score . 70.0
+neighbor . I12032 I12852 g6695 I12033
+failing-states . 
+0011 . 11
+1111 . 20
+0101 . 9
+1101 . 13
+1010 . 9
+1100 . 4
+passing-states . 
+1010 . 25
+0101 . 28
+1101 . 47
+1111 . 51
+0011 . 29
+1100 . 21
+==
+Candidate 3
+site . g6709
+polarity . 1
+match_score . 70.0
+neighbor . I12052 g6722 I12053 I12832
+failing-states . 
+1011 . 17
+1001 . 6
+0011 . 8
+1100 . 12
+0110 . 10
+1111 . 13
+passing-states . 
+0110 . 20
+1011 . 47
+1001 . 22
+0011 . 35
+1111 . 54
+1100 . 23
+==
+Candidate 4
+site . g6722
+polarity . 1
+match_score . 70.0
+neighbor . g6709 I12080 I12079 I12832
+failing-states . 
+0111 . 17
+1111 . 14
+1100 . 13
+1010 . 9
+0011 . 7
+0101 . 6
+passing-states . 
+1010 . 25
+0111 . 47
+1111 . 57
+1100 . 18
+0011 . 29
+0101 . 25
+==
+Candidate 5
+site . g7065
+polarity . 1
+match_score . 70.0
+neighbor . I12833 I12834 I13213 g7082
+failing-states . 
+1110 . 19
+1001 . 6
+1111 . 20
+0101 . 7
+1010 . 8
+0110 . 6
+passing-states . 
+1110 . 48
+1111 . 42
+1001 . 29
+0101 . 29
+1010 . 28
+0110 . 25
+==
+Candidate 6
+site . g7082
+polarity . 1
+match_score . 70.0
+neighbor . I12853 g7065 I13213 I12854
+failing-states . 
+1011 . 19
+1100 . 7
+1010 . 13
+0101 . 6
+0011 . 7
+1111 . 14
+passing-states . 
+1011 . 48
+0011 . 19
+0101 . 30
+1100 . 28
+1111 . 53
+1010 . 23
+==
+Candidate 7
+site . g7257
+polarity . 1
+match_score . 70.0
+neighbor . g7069 I13215 I13638 I13214
+failing-states . 
+1111 . 25
+0111 . 7
+1001 . 12
+0011 . 8
+1100 . 9
+0110 . 5
+passing-states . 
+1111 . 62
+0011 . 21
+0111 . 44
+1100 . 35
+1001 . 21
+0110 . 18
+==
+Candidate 8
+site . g7480
+polarity . 1
+match_score . 70.0
+neighbor . I13640 g5754 I13639
+failing-states . 
+001 . 18
+111 . 17
+011 . 7
+110 . 8
+101 . 11
+100 . 5
+passing-states . 
+001 . 34
+110 . 25
+011 . 28
+101 . 49
+111 . 51
+100 . 14
+==

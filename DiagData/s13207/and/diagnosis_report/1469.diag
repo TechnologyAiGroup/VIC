@@ -1,0 +1,38 @@
+run_diagnosis ./tmax_fail/1469.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 41 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1469.fail
+ #failing_pat=38, #failures=41, #defects=2, #faults=3, CPU_time=0.21
+ Simulated : #failing_pat=38, #passing_pat=96, #failures=41
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=35, #passing_pat=99, #failures=35
+ ------------------------------------------------------------------------------
+ match=81.40%, #explained patterns: <failing=35, passing=82>
+ sa01   DS   g_g1509/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=2, #failing_pat=3, #passing_pat=131, #failures=6
+ ------------------------------------------------------------------------------
+ match=83.33%, #explained patterns: <failing=2, passing=131>
+ sa01   DS   g_g23/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=66.67%, #explained patterns: <failing=2, passing=131>
+ sa01   DS   g_g2452/ZN   (INV_X1)
+ sa01   --   g_g2452/A   (INV_X1)
+ sa01   --   g_I7053/ZN   (INV_X1)
+ sa01   --   g_I7053/A   (INV_X1)
+ sa01   --   g_g3578/ZN   (INV_X1)
+ sa01   --   g_g3578/A   (INV_X1)
+ sa01   --   g_I7517/ZN   (INV_X1)
+ sa01   --   g_I7517/A   (INV_X1)
+ sa01   --   g_g3908/ZN   (INV_X1)
+ sa01   --   g_g3908/A   (INV_X1)
+ sa01   --   g_I9396/ZN   (INV_X1)
+ sa01   --   g_I9396/A   (INV_X1)
+ sa01   --   g_g5042/ZN   (INV_X1)
+ sa01   --   g_g5042/A   (INV_X1)
+ sa01   --   g_g5674/ZN   (INV_X1)
+ sa01   --   g_g5674/A   (INV_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/147.diag

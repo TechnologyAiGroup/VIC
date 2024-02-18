@@ -1,0 +1,23 @@
+==
+Candidate 0
+site . g2528
+polarity . 1
+match_score . 47.06
+neighbor . g1260
+failing-states . 
+0 . 70
+1 . 34
+passing-states . 
+0 . 52
+1 . 111
+==
+Candidate 1
+site . g1260->g2528
+polarity . 1
+match_score . 47.06
+neighbor . 
+failing-states . 
+ . 104
+passing-states . 
+ . 163
+==

@@ -1,0 +1,36 @@
+run_diagnosis ./tmax_fail/248.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 70 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/248.fail
+ #failing_pat=70, #failures=70, #defects=2, #faults=4, CPU_time=0.15
+ Simulated : #failing_pat=70, #passing_pat=96, #failures=70
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=60, #passing_pat=106, #failures=60
+ ------------------------------------------------------------------------------
+ match=96.77%, #explained patterns: <failing=60, passing=104>
+ sa01   DS   g_g1369/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=3, #failing_pat=10, #passing_pat=156, #failures=10
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=5, passing=156>
+ sa01   DS   g_g6458/A2   (OR4_X1)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=5, passing=156>
+ sa01   DS   g_g6458/ZN   (OR4_X1)
+ sa01   --   g_I12655/ZN   (INV_X1)
+ sa01   --   g_I12655/A   (INV_X1)
+ sa01   --   g_g6948/ZN   (INV_X1)
+ sa01   --   g_g6948/A   (INV_X1)
+ sa01   --   g_I12888/ZN   (INV_X1)
+ sa01   --   g_I12888/A   (INV_X1)
+ sa01   --   g_g7100/ZN   (INV_X1)
+ sa01   --   g_g7100/A   (INV_X1)
+ sa01   --   g_tmp_wire_665/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=41.67%, #explained patterns: <failing=3, passing=156>
+ sa01   DS   g_g4328/ZN   (INV_X1)
+ sa01   --   g_g4328/A   (INV_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2480.diag

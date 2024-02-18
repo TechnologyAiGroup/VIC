@@ -1,0 +1,39 @@
+run_diagnosis ./tmax_fail/413.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 42 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/413.fail
+ #failing_pat=42, #failures=42, #defects=1, #faults=4, CPU_time=0.04
+ Simulated : #failing_pat=42, #passing_pat=96, #failures=42
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=30, #passing_pat=108, #failures=30
+ ------------------------------------------------------------------------------
+ match=83.33%, #explained patterns: <failing=25, passing=108>
+ sa01   DS   g_g7282/ZN   (AND2_X1)
+ sa01   --   g_I13444/ZN   (INV_X1)
+ sa01   --   g_I13444/A   (INV_X1)
+ sa01   --   g_g7342/ZN   (INV_X1)
+ sa01   --   g_g7342/A   (INV_X1)
+ sa01   --   g_I13873/ZN   (INV_X1)
+ sa01   --   g_I13873/A   (INV_X1)
+ sa01   --   g_g7576/ZN   (INV_X1)
+ sa01   --   g_g7576/A   (INV_X1)
+ sa01   --   g_I14214/ZN   (INV_X1)
+ sa01   --   g_I14214/A   (INV_X1)
+ sa01   --   g_g7781/ZN   (INV_X1)
+ sa01   --   g_g7781/A   (INV_X1)
+ sa01   --   g_tmp_wire_198/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=83.33%, #explained patterns: <failing=25, passing=108>
+ sa01   DS   g_tmp_wire_198/Z   (MUX2_X1)
+ sa01   --   g_g1532/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=80.00%, #explained patterns: <failing=24, passing=108>
+ sa01   DS   g_g5830/ZN   (OR2_X1)
+ sa01   --   g_g7282/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=66.67%, #explained patterns: <failing=20, passing=108>
+ sa01   DS   g_g5714/ZN   (AND2_X1)
+ sa01   --   g_g5830/A1   (OR2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/414.diag

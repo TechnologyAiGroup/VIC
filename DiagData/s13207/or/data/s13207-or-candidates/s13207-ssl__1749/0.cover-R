@@ -1,0 +1,173 @@
+==
+Candidate 0
+site . g1889
+polarity . 1
+match_score . 90.91
+neighbor . g1690 g1021 g1025 g1018 g1904
+failing-states . 
+11010 . 6
+10011 . 7
+10111 . 5
+11110 . 5
+passing-states . 
+11000 . 39
+11010 . 32
+10111 . 26
+10101 . 34
+11110 . 28
+00001 . 33
+11100 . 31
+10011 . 21
+==
+Candidate 1
+site . g1018->g1889
+polarity . 1
+match_score . 90.91
+neighbor . g1025 g1021
+failing-states . 
+01 . 6
+00 . 7
+10 . 5
+11 . 5
+passing-states . 
+01 . 71
+10 . 60
+11 . 59
+00 . 54
+==
+Candidate 2
+site . g8798
+polarity . 1
+match_score . 100.0
+neighbor . g6984 g7688 g8644
+failing-states . 
+111 . 9
+011 . 14
+passing-states . 
+111 . 191
+011 . 22
+010 . 5
+110 . 26
+==
+Candidate 3
+site . g8798->g8911
+polarity . 1
+match_score . 100.0
+neighbor . g6984 g7688 g8644
+failing-states . 
+111 . 9
+011 . 14
+passing-states . 
+111 . 191
+011 . 22
+010 . 5
+110 . 26
+==
+Candidate 4
+site . g8911
+polarity . 1
+match_score . 100.0
+neighbor . g7688 g8798
+failing-states . 
+10 . 9
+11 . 14
+passing-states . 
+10 . 191
+11 . 53
+==
+Candidate 5
+site . I15433
+polarity . 1
+match_score . 100.0
+neighbor . g8911
+failing-states . 
+0 . 9
+1 . 14
+passing-states . 
+0 . 191
+1 . 53
+==
+Candidate 6
+site . g8911->I15433
+polarity . 1
+match_score . 100.0
+neighbor . g7688 g8798
+failing-states . 
+10 . 9
+11 . 14
+passing-states . 
+10 . 191
+11 . 53
+==
+Candidate 7
+site . g8977
+polarity . 1
+match_score . 100.0
+neighbor . I15433
+failing-states . 
+1 . 9
+0 . 14
+passing-states . 
+1 . 191
+0 . 53
+==
+Candidate 8
+site . I15433->g8977
+polarity . 1
+match_score . 100.0
+neighbor . g8911
+failing-states . 
+0 . 9
+1 . 14
+passing-states . 
+0 . 191
+1 . 53
+==
+Candidate 9
+site . I15516
+polarity . 1
+match_score . 100.0
+neighbor . g8977
+failing-states . 
+0 . 9
+1 . 14
+passing-states . 
+0 . 191
+1 . 53
+==
+Candidate 10
+site . g8977->I15516
+polarity . 1
+match_score . 100.0
+neighbor . I15433
+failing-states . 
+1 . 9
+0 . 14
+passing-states . 
+1 . 191
+0 . 53
+==
+Candidate 11
+site . g9034
+polarity . 1
+match_score . 100.0
+neighbor . I15516
+failing-states . 
+1 . 9
+0 . 14
+passing-states . 
+1 . 191
+0 . 53
+==
+Candidate 12
+site . I15516->g9034
+polarity . 1
+match_score . 100.0
+neighbor . g8977
+failing-states . 
+0 . 9
+1 . 14
+passing-states . 
+0 . 191
+1 . 53
+==

@@ -1,0 +1,111 @@
+run_diagnosis ./tmax_fail/1421.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1421.fail
+ #failing_pat=1, #failures=1, #defects=1, #faults=25, CPU_time=0.13
+ Simulated : #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=25, #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   g_I5386/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_I5386/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_I5389/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   g_I5389/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_I5398/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   g_I5398/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   g_g703/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_g703/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   g_g2635/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   g_g1579/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_tmp_wire_586/A   (MUX2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_I9099/ZN   (OR3_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_g4786/A4   (OR4_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_g5440/A1   (OR2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_g5440/ZN   (OR2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_g4786/ZN   (OR4_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_I10605/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   g_I10605/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   g_g6009/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_g5440/A2   (OR2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_g6009/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_I11440/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   g_I11440/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   g_g6371/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_g6371/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1422.diag

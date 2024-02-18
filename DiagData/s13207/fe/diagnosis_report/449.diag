@@ -1,0 +1,56 @@
+run_diagnosis ./tmax_fail/449.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 555 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/449.fail
+ #failing_pat=267, #failures=555, #defects=1, #faults=7, CPU_time=0.19
+ Simulated : #failing_pat=267, #passing_pat=0, #failures=555
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=7, #failing_pat=257, #passing_pat=10, #failures=330
+ ------------------------------------------------------------------------------
+ match=80.91%, #explained patterns: <failing=211, passing=0>
+ sa01   DS   g_I12687/ZN   (INV_X1)
+ sa01   --   g_I12687/A   (INV_X1)
+ sa01   --   g_g6962/ZN   (INV_X1)
+ sa01   --   g_g6962/A   (INV_X1)
+ sa01   --   g_I12897/ZN   (INV_X1)
+ sa01   --   g_I12897/A   (INV_X1)
+ sa01   --   g_g7103/ZN   (INV_X1)
+ sa01   --   g_g7103/A   (INV_X1)
+ sa01   --   g7103   (_PO)
+ ------------------------------------------------------------------------------
+ match=68.61%, #explained patterns: <failing=254, passing=0>
+ sa01   DS   g_g6745/ZN   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=62.56%, #explained patterns: <failing=208, passing=0>
+ sa01   DS   g_g6745/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=50.91%, #explained patterns: <failing=122, passing=0>
+ sa1   DS   g7103   (_PO)
+ sa1   --   g_g7103/ZN   (INV_X1)
+ sa0   --   g_g7103/A   (INV_X1)
+ sa0   --   g_I12897/ZN   (INV_X1)
+ sa1   --   g_I12897/A   (INV_X1)
+ sa1   --   g_g6962/ZN   (INV_X1)
+ sa0   --   g_g6962/A   (INV_X1)
+ sa0   --   g_I12687/ZN   (INV_X1)
+ sa1   --   g_I12687/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=30.00%, #explained patterns: <failing=89, passing=0>
+ sa0   DS   g7103   (_PO)
+ sa0   --   g_g7103/ZN   (INV_X1)
+ sa1   --   g_g7103/A   (INV_X1)
+ sa1   --   g_I12897/ZN   (INV_X1)
+ sa0   --   g_I12897/A   (INV_X1)
+ sa0   --   g_g6962/ZN   (INV_X1)
+ sa1   --   g_g6962/A   (INV_X1)
+ sa1   --   g_I12687/ZN   (INV_X1)
+ sa0   --   g_I12687/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=5.72%, #explained patterns: <failing=0, passing=0>
+ sa1   DS   g_g973/seq_DFF_X10/CK   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=4.20%, #explained patterns: <failing=0, passing=0>
+ sa1   DS   g_tmp_wire_223/S   (MUX2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/45.diag

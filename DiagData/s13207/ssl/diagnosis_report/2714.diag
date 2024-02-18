@@ -1,0 +1,31 @@
+run_diagnosis ./tmax_fail/2714.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 19 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2714.fail
+ #failing_pat=19, #failures=19, #defects=1, #faults=2, CPU_time=0.02
+ Simulated : #failing_pat=19, #passing_pat=96, #failures=19
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=6, #passing_pat=109, #failures=6
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=109>
+ sa01   DS   g_g5513/ZN   (AND2_X1)
+ sa01   --   g_I10949/ZN   (INV_X1)
+ sa01   --   g_I10949/A   (INV_X1)
+ sa01   --   g_g6202/ZN   (INV_X1)
+ sa01   --   g_g6202/A   (INV_X1)
+ sa01   --   g_I12003/ZN   (INV_X1)
+ sa01   --   g_I12003/A   (INV_X1)
+ sa01   --   g_g6687/ZN   (INV_X1)
+ sa01   --   g_g6687/A   (INV_X1)
+ sa01   --   g_I12466/ZN   (INV_X1)
+ sa01   --   g_I12466/A   (INV_X1)
+ sa01   --   g_g6865/ZN   (INV_X1)
+ sa01   --   g_g6865/A   (INV_X1)
+ sa01   --   g_tmp_wire_70/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=109>
+ sa01   DS   g_tmp_wire_70/Z   (MUX2_X1)
+ sa01   --   g_g1339/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2715.diag

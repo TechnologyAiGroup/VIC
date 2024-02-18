@@ -1,0 +1,164 @@
+==
+Candidate 0
+site . g4688
+polarity . 1
+match_score . 93.33
+neighbor . g3190 g4193
+failing-states . 
+10 . 32
+passing-states . 
+00 . 106
+11 . 33
+10 . 65
+01 . 31
+==
+Candidate 1
+site . I10128
+polarity . 1
+match_score . 93.33
+neighbor . g4688
+failing-states . 
+1 . 32
+passing-states . 
+0 . 106
+1 . 129
+==
+Candidate 2
+site . g4688->I10128
+polarity . 1
+match_score . 93.33
+neighbor . g3190 g4193
+failing-states . 
+10 . 32
+passing-states . 
+00 . 106
+11 . 33
+10 . 65
+01 . 31
+==
+Candidate 3
+site . g5643
+polarity . 1
+match_score . 93.33
+neighbor . I10128
+failing-states . 
+0 . 32
+passing-states . 
+1 . 106
+0 . 129
+==
+Candidate 4
+site . I10128->g5643
+polarity . 1
+match_score . 93.33
+neighbor . g4688
+failing-states . 
+1 . 32
+passing-states . 
+0 . 106
+1 . 129
+==
+Candidate 5
+site . I10283
+polarity . 1
+match_score . 93.33
+neighbor . g5643
+failing-states . 
+1 . 32
+passing-states . 
+0 . 106
+1 . 129
+==
+Candidate 6
+site . g5643->I10283
+polarity . 1
+match_score . 93.33
+neighbor . I10128
+failing-states . 
+0 . 32
+passing-states . 
+1 . 106
+0 . 129
+==
+Candidate 7
+site . g5742
+polarity . 1
+match_score . 93.33
+neighbor . I10283
+failing-states . 
+0 . 32
+passing-states . 
+1 . 106
+0 . 129
+==
+Candidate 8
+site . I10283->g5742
+polarity . 1
+match_score . 93.33
+neighbor . g5643
+failing-states . 
+1 . 32
+passing-states . 
+0 . 106
+1 . 129
+==
+Candidate 9
+site . g4193
+polarity . 1
+match_score . 80.0
+neighbor . g2727 g145 g3190
+failing-states . 
+101 . 32
+passing-states . 
+010 . 30
+111 . 33
+001 . 35
+000 . 34
+100 . 42
+110 . 31
+011 . 30
+==
+Candidate 10
+site . g4193->g4688
+polarity . 1
+match_score . 80.0
+neighbor . g2727 g145 g3190
+failing-states . 
+101 . 32
+passing-states . 
+010 . 30
+111 . 33
+001 . 35
+000 . 34
+100 . 42
+110 . 31
+011 . 30
+==
+Candidate 11
+site . g3190
+polarity . 1
+match_score . 66.67
+neighbor . g2424 g1658 g4193
+failing-states . 
+010 . 32
+passing-states . 
+100 . 64
+011 . 33
+110 . 65
+000 . 42
+001 . 31
+==
+Candidate 12
+site . g3190->g4688
+polarity . 1
+match_score . 66.67
+neighbor . g2424 g1658 g4193
+failing-states . 
+010 . 32
+passing-states . 
+100 . 64
+011 . 33
+110 . 65
+000 . 42
+001 . 31
+==

@@ -1,0 +1,43 @@
+run_diagnosis ./tmax_fail/2846.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 30 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2846.fail
+ #failing_pat=15, #failures=30, #defects=1, #faults=4, CPU_time=0.09
+ Simulated : #failing_pat=15, #passing_pat=96, #failures=30
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=15, #passing_pat=96, #failures=30
+ ------------------------------------------------------------------------------
+ match=80.00%, #explained patterns: <failing=9, passing=96>
+ sa01   DS   g_g9291/ZN   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=80.00%, #explained patterns: <failing=9, passing=96>
+ sa01   DS   g_I15842/ZN   (INV_X1)
+ sa01   --   g_I15842/A   (INV_X1)
+ sa01   --   g_g9188/ZN   (INV_X1)
+ sa01   --   g_g9188/A   (INV_X1)
+ sa01   --   g_g9199/ZN   (INV_X1)
+ sa01   --   g_g9199/A   (INV_X1)
+ sa01   --   g_g9209/ZN   (INV_X1)
+ sa01   --   g_g9209/A   (INV_X1)
+ sa01   --   g_I15930/ZN   (INV_X1)
+ sa01   --   g_I15930/A   (INV_X1)
+ sa01   --   g_g9218/ZN   (INV_X1)
+ sa01   --   g_g9218/A   (INV_X1)
+ sa01   --   g_I15962/ZN   (INV_X1)
+ sa01   --   g_I15962/A   (INV_X1)
+ sa01   --   g_g9236/ZN   (INV_X1)
+ sa01   --   g_g9236/A   (INV_X1)
+ sa01   --   g_I15982/ZN   (INV_X1)
+ sa01   --   g_I15982/A   (INV_X1)
+ sa01   --   g_g9252/ZN   (INV_X1)
+ sa01   --   g_g9252/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=73.33%, #explained patterns: <failing=9, passing=96>
+ sa01   DS   g_g9273/ZN   (AND2_X1)
+ sa01   --   g_g9291/A1   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=73.33%, #explained patterns: <failing=9, passing=96>
+ sa01   DS   g_g9273/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2847.diag

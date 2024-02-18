@@ -1,0 +1,31 @@
+==
+Candidate 0
+site . I16052
+polarity . 1
+match_score . 100.0
+neighbor . g9291
+failing-states . 
+0 . 118
+passing-states . 
+1 . 149
+==
+Candidate 1
+site . g9291->I16052
+polarity . 1
+match_score . 100.0
+neighbor . g6216 g9273
+failing-states . 
+10 . 118
+passing-states . 
+01 . 149
+==
+Candidate 2
+site . I16052->g9312
+polarity . 1
+match_score . 100.0
+neighbor . g9291
+failing-states . 
+0 . 118
+passing-states . 
+1 . 149
+==

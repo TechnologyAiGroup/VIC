@@ -1,0 +1,38 @@
+run_diagnosis ./tmax_fail/1092.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 2 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1092.fail
+ #failing_pat=2, #failures=2, #defects=1, #faults=4, CPU_time=0.05
+ Simulated : #failing_pat=2, #passing_pat=96, #failures=2
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=2, #passing_pat=96, #failures=2
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=96>
+ sa01   DS   g_g6057/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=96>
+ sa01   DS   g_g6057/ZN   (AND2_X1)
+ sa01   --   g_g8637/A1   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=96>
+ sa01   DS   g_g8637/ZN   (OR2_X1)
+ sa01   --   g_g8793/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=96>
+ sa01   DS   g_g8793/ZN   (AND2_X1)
+ sa01   --   g_I15329/ZN   (INV_X1)
+ sa01   --   g_I15329/A   (INV_X1)
+ sa01   --   g_g8913/ZN   (INV_X1)
+ sa01   --   g_g8913/A   (INV_X1)
+ sa01   --   g_I15481/ZN   (INV_X1)
+ sa01   --   g_I15481/A   (INV_X1)
+ sa01   --   g_g9019/ZN   (INV_X1)
+ sa01   --   g_g9019/A   (INV_X1)
+ sa01   --   g_I15519/ZN   (INV_X1)
+ sa01   --   g_I15519/A   (INV_X1)
+ sa01   --   g_g9035/ZN   (INV_X1)
+ sa01   --   g_g9035/A   (INV_X1)
+ sa01   --   g_tmp_wire_284/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1093.diag

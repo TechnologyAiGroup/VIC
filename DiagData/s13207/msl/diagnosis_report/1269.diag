@@ -1,0 +1,21 @@
+run_diagnosis ./tmax_fail/1269.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 189 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1269.fail
+ #failing_pat=161, #failures=189, #defects=2, #faults=2, CPU_time=0.18
+ Simulated : #failing_pat=161, #passing_pat=96, #failures=189
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=68, #passing_pat=189, #failures=68
+ ------------------------------------------------------------------------------
+ match=97.14%, #explained patterns: <failing=68, passing=177>
+ sa01   DS   g_g1122/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=121, #passing_pat=136, #failures=121
+ ------------------------------------------------------------------------------
+ match=89.63%, #explained patterns: <failing=121, passing=110>
+ sa01   DS   g_g1320/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/127.diag

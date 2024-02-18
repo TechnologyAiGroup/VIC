@@ -1,0 +1,49 @@
+run_diagnosis ./tmax_fail/98.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 77 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/98.fail
+ #failing_pat=77, #failures=77, #defects=2, #faults=5, CPU_time=0.17
+ Simulated : #failing_pat=77, #passing_pat=96, #failures=77
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=20, #passing_pat=153, #failures=20
+ ------------------------------------------------------------------------------
+ match=65.00%, #explained patterns: <failing=13, passing=153>
+ sa01   DS   g_g7254/ZN   (OR2_X1)
+ sa01   --   g_I13481/ZN   (INV_X1)
+ sa01   --   g_I13481/A   (INV_X1)
+ sa01   --   g_g7355/ZN   (INV_X1)
+ sa01   --   g_g7355/A   (INV_X1)
+ sa01   --   g_I13940/ZN   (INV_X1)
+ sa01   --   g_I13940/A   (INV_X1)
+ sa01   --   g_g7603/ZN   (INV_X1)
+ sa01   --   g_g7603/A   (INV_X1)
+ sa01   --   g_I14370/ZN   (INV_X1)
+ sa01   --   g_I14370/A   (INV_X1)
+ sa01   --   g_g8093/ZN   (INV_X1)
+ sa01   --   g_g8093/A   (INV_X1)
+ sa01   --   g_I14457/ZN   (INV_X1)
+ sa01   --   g_I14457/A   (INV_X1)
+ sa01   --   g_g8226/ZN   (INV_X1)
+ sa01   --   g_g8226/A   (INV_X1)
+ sa01   --   g_tmp_wire_184/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=65.00%, #explained patterns: <failing=13, passing=153>
+ sa01   DS   g_tmp_wire_184/Z   (MUX2_X1)
+ sa01   --   g_g1486/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=60.00%, #explained patterns: <failing=12, passing=153>
+ sa01   DS   g_g6923/ZN   (AND2_X1)
+ sa01   --   g_g7254/A1   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=45.00%, #explained patterns: <failing=9, passing=153>
+ sa01   DS   g_g5298/ZN   (AND2_X1)
+ sa01   --   g_g7254/A2   (OR2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=57, #passing_pat=116, #failures=57
+ ------------------------------------------------------------------------------
+ match=96.61%, #explained patterns: <failing=57, passing=113>
+ sa01   DS   g_g1366/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/980.diag

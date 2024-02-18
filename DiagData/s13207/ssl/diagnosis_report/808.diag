@@ -1,0 +1,30 @@
+run_diagnosis ./tmax_fail/808.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 74 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/808.fail
+ #failing_pat=35, #failures=74, #defects=2, #faults=2, CPU_time=0.03
+ Simulated : #failing_pat=35, #passing_pat=96, #failures=74
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=18, #passing_pat=113, #failures=18
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=18, passing=115>
+ sa01   DS   g_I12652/ZN   (INV_X1)
+ sa01   --   g_I12652/A   (INV_X1)
+ sa01   --   g_g6947/ZN   (INV_X1)
+ sa01   --   g_g6947/A   (INV_X1)
+ sa01   --   g_I12900/ZN   (INV_X1)
+ sa01   --   g_I12900/A   (INV_X1)
+ sa01   --   g_g7104/ZN   (INV_X1)
+ sa01   --   g_g7104/A   (INV_X1)
+ sa01   --   g_tmp_wire_216/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=11, #passing_pat=120, #failures=16
+ ------------------------------------------------------------------------------
+ match=72.73%, #explained patterns: <failing=11, passing=122>
+ sa01   DS   g_I11031/ZN   (INV_X1)
+ sa01   --   g_I11031/A   (INV_X1)
+ sa01   --   g_g6232/ZN   (INV_X1)
+ sa01   --   g_g6232/A   (INV_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/809.diag

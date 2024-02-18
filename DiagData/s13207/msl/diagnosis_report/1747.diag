@@ -1,0 +1,47 @@
+run_diagnosis ./tmax_fail/1747.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 294 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1747.fail
+ #failing_pat=145, #failures=294, #defects=2, #faults=2, CPU_time=0.19
+ Simulated : #failing_pat=145, #passing_pat=96, #failures=294
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=134, #passing_pat=107, #failures=268
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=134, passing=107>
+ sa01   DS   g_I5649/ZN   (INV_X1)
+ sa01   --   g_I5649/A   (INV_X1)
+ sa01   --   g_g1795/ZN   (INV_X1)
+ sa01   --   g_g1795/A   (INV_X1)
+ sa01   --   g_I7195/ZN   (INV_X1)
+ sa01   --   g_I7195/A   (INV_X1)
+ sa01   --   g_g3691/ZN   (INV_X1)
+ sa01   --   g_g3691/A   (INV_X1)
+ sa01   --   g_I8315/ZN   (INV_X1)
+ sa01   --   g_I8315/A   (INV_X1)
+ sa01   --   g_g4350/ZN   (INV_X1)
+ sa01   --   g_g4350/A   (INV_X1)
+ sa01   --   g_I9366/ZN   (INV_X1)
+ sa01   --   g_I9366/A   (INV_X1)
+ sa01   --   g_g5026/ZN   (INV_X1)
+ sa01   --   g_g5026/A   (INV_X1)
+ sa01   --   g_I10243/ZN   (INV_X1)
+ sa01   --   g_I10243/A   (INV_X1)
+ sa01   --   g_g5726/ZN   (INV_X1)
+ sa01   --   g_g5726/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=26, #passing_pat=215, #failures=26
+ ------------------------------------------------------------------------------
+ match=53.85%, #explained patterns: <failing=14, passing=215>
+ sa01   DS   g_g5566/ZN   (OR2_X1)
+ sa01   --   g_I10678/ZN   (INV_X1)
+ sa01   --   g_I10678/A   (INV_X1)
+ sa01   --   g_g6063/ZN   (INV_X1)
+ sa01   --   g_g6063/A   (INV_X1)
+ sa01   --   g_I11458/ZN   (INV_X1)
+ sa01   --   g_I11458/A   (INV_X1)
+ sa01   --   g_g6377/ZN   (INV_X1)
+ sa01   --   g_g6377/A   (INV_X1)
+ sa01   --   g_tmp_wire_35/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1748.diag

@@ -1,0 +1,19 @@
+==
+Candidate 0
+site . g8625
+polarity . 1
+match_score . 73.02
+neighbor . g8009 g6573 g1000 g1860
+failing-states . 
+1000 . 46
+1110 . 2
+1010 . 2
+passing-states . 
+1011 . 35
+1001 . 37
+1100 . 32
+1110 . 23
+1101 . 31
+1010 . 33
+1111 . 26
+==

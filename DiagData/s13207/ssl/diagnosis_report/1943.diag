@@ -1,0 +1,46 @@
+run_diagnosis ./tmax_fail/1943.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 84 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1943.fail
+ #failing_pat=84, #failures=84, #defects=1, #faults=5, CPU_time=0.04
+ Simulated : #failing_pat=84, #passing_pat=96, #failures=84
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=47, #passing_pat=133, #failures=47
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=47, passing=133>
+ sa01   DS   g_g6285/ZN   (NAND2_X1)
+ sa01   --   g_I11809/ZN   (INV_X1)
+ sa01   --   g_I11809/A   (INV_X1)
+ sa01   --   g_g6599/ZN   (INV_X1)
+ sa01   --   g_g6599/A   (INV_X1)
+ sa01   --   g_I12535/ZN   (INV_X1)
+ sa01   --   g_I12535/A   (INV_X1)
+ sa01   --   g_g6888/ZN   (INV_X1)
+ sa01   --   g_g6888/A   (INV_X1)
+ sa01   --   g_tmp_wire_149/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=47, passing=133>
+ sa01   DS   g_tmp_wire_149/Z   (MUX2_X1)
+ sa01   --   g_g1382/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=47, passing=133>
+ sa01   DS   g_I7885/ZN   (INV_X1)
+ sa01   --   g_I7885/A   (INV_X1)
+ sa01   --   g_g4088/ZN   (INV_X1)
+ sa01   --   g_g4088/A   (INV_X1)
+ sa01   --   g_g4908/ZN   (INV_X1)
+ sa01   --   g_g4908/A   (INV_X1)
+ sa01   --   g_g5477/ZN   (INV_X1)
+ sa01   --   g_g5477/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=95.92%, #explained patterns: <failing=46, passing=133>
+ sa01   DS   g_g1780/ZN   (INV_X1)
+ sa01   --   g_g1780/A   (INV_X1)
+ sa01   --   g_g2837/ZN   (INV_X1)
+ sa01   --   g_g2837/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=94.00%, #explained patterns: <failing=46, passing=131>
+ sa01   DS   g_g1382/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1944.diag

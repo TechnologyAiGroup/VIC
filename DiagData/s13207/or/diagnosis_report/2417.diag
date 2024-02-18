@@ -1,0 +1,29 @@
+run_diagnosis ./tmax_fail/2417.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 66 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2417.fail
+ #failing_pat=66, #failures=66, #defects=2, #faults=2, CPU_time=0.11
+ Simulated : #failing_pat=66, #passing_pat=96, #failures=66
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=35, #passing_pat=127, #failures=35
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=35, passing=127>
+ sa01   DS   g_g8633/ZN   (NAND2_X1)
+ sa01   --   g_I15003/ZN   (INV_X1)
+ sa01   --   g_I15003/A   (INV_X1)
+ sa01   --   g_g8797/ZN   (INV_X1)
+ sa01   --   g_g8797/A   (INV_X1)
+ sa01   --   g_I15202/ZN   (INV_X1)
+ sa01   --   g_I15202/A   (INV_X1)
+ sa01   --   g_g8872/ZN   (INV_X1)
+ sa01   --   g_g8872/A   (INV_X1)
+ sa01   --   g8872   (_PO)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=31, #passing_pat=131, #failures=31
+ ------------------------------------------------------------------------------
+ match=55.36%, #explained patterns: <failing=27, passing=106>
+ sa01   DS   g_g990/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2418.diag

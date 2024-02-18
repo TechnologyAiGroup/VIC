@@ -1,0 +1,37 @@
+run_diagnosis ./tmax_fail/1180.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 121 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1180.fail
+ #failing_pat=82, #failures=121, #defects=1, #faults=5, CPU_time=0.15
+ Simulated : #failing_pat=82, #passing_pat=96, #failures=121
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=62, #passing_pat=116, #failures=75
+ ------------------------------------------------------------------------------
+ match=82.67%, #explained patterns: <failing=49, passing=116>
+ sa01   DS   g_I8268/ZN   (INV_X1)
+ sa01   --   g_I8268/A   (INV_X1)
+ sa01   --   g_g4303/ZN   (INV_X1)
+ sa01   --   g_g4303/A   (INV_X1)
+ sa01   --   g_I8880/ZN   (INV_X1)
+ sa01   --   g_I8880/A   (INV_X1)
+ sa01   --   g_g4655/ZN   (INV_X1)
+ sa01   --   g_g4655/A   (INV_X1)
+ sa01   --   g4655   (_PO)
+ ------------------------------------------------------------------------------
+ match=74.71%, #explained patterns: <failing=40, passing=116>
+ sa01   DS   g_g2555/ZN   (INV_X1)
+ sa01   --   g_g2555/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=74.71%, #explained patterns: <failing=40, passing=116>
+ sa01   DS   g_g2801/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=63.53%, #explained patterns: <failing=31, passing=116>
+ sa01   DS   g_I6540/ZN   (NAND2_X1)
+ sa01   --   g_g2801/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=57.47%, #explained patterns: <failing=32, passing=116>
+ sa01   DS   g_I6539/ZN   (NAND2_X1)
+ sa01   --   g_g2801/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1181.diag

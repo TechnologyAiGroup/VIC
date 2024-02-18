@@ -1,0 +1,36 @@
+run_diagnosis ./tmax_fail/1442.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 145 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1442.fail
+ #failing_pat=119, #failures=145, #defects=1, #faults=5, CPU_time=0.15
+ Simulated : #failing_pat=119, #passing_pat=96, #failures=145
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=119, #passing_pat=96, #failures=145
+ ------------------------------------------------------------------------------
+ match=82.07%, #explained patterns: <failing=93, passing=96>
+ sa01   DS   g_I8268/ZN   (INV_X1)
+ sa01   --   g_I8268/A   (INV_X1)
+ sa01   --   g_g4303/ZN   (INV_X1)
+ sa01   --   g_g4303/A   (INV_X1)
+ sa01   --   g_I8880/ZN   (INV_X1)
+ sa01   --   g_I8880/A   (INV_X1)
+ sa01   --   g_g4655/ZN   (INV_X1)
+ sa01   --   g_g4655/A   (INV_X1)
+ sa01   --   g4655   (_PO)
+ ------------------------------------------------------------------------------
+ match=74.39%, #explained patterns: <failing=77, passing=96>
+ sa01   DS   g_g2555/ZN   (INV_X1)
+ sa01   --   g_g2555/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=74.39%, #explained patterns: <failing=77, passing=96>
+ sa01   DS   g_g2801/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=61.54%, #explained patterns: <failing=62, passing=96>
+ sa01   DS   g_I6538/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=57.93%, #explained patterns: <failing=60, passing=96>
+ sa01   DS   g_I6539/ZN   (NAND2_X1)
+ sa01   --   g_g2801/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1443.diag

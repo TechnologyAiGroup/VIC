@@ -1,0 +1,37 @@
+run_diagnosis ./tmax_fail/2951.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 60 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2951.fail
+ #failing_pat=60, #failures=60, #defects=2, #faults=3, CPU_time=0.12
+ Simulated : #failing_pat=60, #passing_pat=96, #failures=60
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=36, #passing_pat=120, #failures=36
+ ------------------------------------------------------------------------------
+ match=66.67%, #explained patterns: <failing=24, passing=120>
+ sa01   DS   g_g7282/ZN   (AND2_X1)
+ sa01   --   g_I13444/ZN   (INV_X1)
+ sa01   --   g_I13444/A   (INV_X1)
+ sa01   --   g_g7342/ZN   (INV_X1)
+ sa01   --   g_g7342/A   (INV_X1)
+ sa01   --   g_I13873/ZN   (INV_X1)
+ sa01   --   g_I13873/A   (INV_X1)
+ sa01   --   g_g7576/ZN   (INV_X1)
+ sa01   --   g_g7576/A   (INV_X1)
+ sa01   --   g_I14214/ZN   (INV_X1)
+ sa01   --   g_I14214/A   (INV_X1)
+ sa01   --   g_g7781/ZN   (INV_X1)
+ sa01   --   g_g7781/A   (INV_X1)
+ sa01   --   g_tmp_wire_198/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=63.89%, #explained patterns: <failing=23, passing=120>
+ sa01   DS   g_g5830/ZN   (OR2_X1)
+ sa01   --   g_g7282/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=24, #passing_pat=132, #failures=24
+ ------------------------------------------------------------------------------
+ match=96.00%, #explained patterns: <failing=24, passing=130>
+ sa01   DS   g_g1377/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2952.diag

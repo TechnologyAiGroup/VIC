@@ -1,0 +1,21 @@
+run_diagnosis ./tmax_fail/2808.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 56 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2808.fail
+ #failing_pat=56, #failures=56, #defects=2, #faults=2, CPU_time=0.11
+ Simulated : #failing_pat=56, #passing_pat=96, #failures=56
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=55, #passing_pat=97, #failures=55
+ ------------------------------------------------------------------------------
+ match=53.92%, #explained patterns: <failing=55, passing=47>
+ sa01   DS   g_g819/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=1, #passing_pat=151, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=151>
+ sa1   DS   g_tmp_wire_57/A   (MUX2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2809.diag

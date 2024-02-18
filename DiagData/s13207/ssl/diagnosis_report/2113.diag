@@ -1,0 +1,39 @@
+run_diagnosis ./tmax_fail/2113.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 18 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2113.fail
+ #failing_pat=18, #failures=18, #defects=1, #faults=3, CPU_time=0.02
+ Simulated : #failing_pat=18, #passing_pat=96, #failures=18
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=10, #passing_pat=104, #failures=10
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=104>
+ sa01   DS   g_g6923/ZN   (AND2_X1)
+ sa01   --   g_g7254/A1   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=104>
+ sa01   DS   g_g7254/ZN   (OR2_X1)
+ sa01   --   g_I13481/ZN   (INV_X1)
+ sa01   --   g_I13481/A   (INV_X1)
+ sa01   --   g_g7355/ZN   (INV_X1)
+ sa01   --   g_g7355/A   (INV_X1)
+ sa01   --   g_I13940/ZN   (INV_X1)
+ sa01   --   g_I13940/A   (INV_X1)
+ sa01   --   g_g7603/ZN   (INV_X1)
+ sa01   --   g_g7603/A   (INV_X1)
+ sa01   --   g_I14370/ZN   (INV_X1)
+ sa01   --   g_I14370/A   (INV_X1)
+ sa01   --   g_g8093/ZN   (INV_X1)
+ sa01   --   g_g8093/A   (INV_X1)
+ sa01   --   g_I14457/ZN   (INV_X1)
+ sa01   --   g_I14457/A   (INV_X1)
+ sa01   --   g_g8226/ZN   (INV_X1)
+ sa01   --   g_g8226/A   (INV_X1)
+ sa01   --   g_tmp_wire_184/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=104>
+ sa01   DS   g_tmp_wire_184/Z   (MUX2_X1)
+ sa01   --   g_g1486/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2114.diag

@@ -1,0 +1,285 @@
+==
+Candidate 0
+site . I11129
+polarity . 1
+match_score . 61.94
+neighbor . g5418
+failing-states . 
+0 . 62
+1 . 73
+passing-states . 
+1 . 60
+0 . 72
+==
+Candidate 1
+site . g5418->I11129
+polarity . 1
+match_score . 61.94
+neighbor . g58 g6253 g6258 g7083 g5100
+failing-states . 
+01011 . 8
+00010 . 9
+00011 . 7
+11010 . 9
+01111 . 10
+01110 . 7
+00111 . 8
+11111 . 5
+11110 . 8
+10001 . 1
+10011 . 9
+10110 . 13
+01010 . 10
+10010 . 5
+10111 . 4
+00001 . 1
+00101 . 2
+10000 . 3
+00100 . 2
+10101 . 1
+00110 . 7
+11011 . 6
+passing-states . 
+00110 . 9
+00011 . 5
+01111 . 12
+00010 . 3
+01010 . 6
+11110 . 8
+10011 . 9
+11111 . 8
+10010 . 8
+11010 . 14
+10101 . 3
+10111 . 8
+01110 . 9
+01011 . 6
+00001 . 3
+11011 . 10
+10110 . 2
+10000 . 1
+00111 . 6
+00101 . 1
+10001 . 1
+==
+Candidate 2
+site . g6278
+polarity . 1
+match_score . 61.94
+neighbor . I11129
+failing-states . 
+1 . 62
+0 . 73
+passing-states . 
+0 . 60
+1 . 72
+==
+Candidate 3
+site . I11129->g6278
+polarity . 1
+match_score . 61.94
+neighbor . g5418
+failing-states . 
+0 . 62
+1 . 73
+passing-states . 
+1 . 60
+0 . 72
+==
+Candidate 4
+site . I11987
+polarity . 1
+match_score . 61.94
+neighbor . g6278
+failing-states . 
+0 . 62
+1 . 73
+passing-states . 
+1 . 60
+0 . 72
+==
+Candidate 5
+site . g6278->I11987
+polarity . 1
+match_score . 61.94
+neighbor . I11129
+failing-states . 
+1 . 62
+0 . 73
+passing-states . 
+0 . 60
+1 . 72
+==
+Candidate 6
+site . g6677
+polarity . 1
+match_score . 61.94
+neighbor . g4259 I11987 g5101
+failing-states . 
+110 . 51
+100 . 56
+011 . 11
+001 . 17
+passing-states . 
+100 . 49
+110 . 52
+001 . 11
+011 . 20
+==
+Candidate 7
+site . I11987->g6677
+polarity . 1
+match_score . 61.94
+neighbor . g6278
+failing-states . 
+0 . 62
+1 . 73
+passing-states . 
+1 . 60
+0 . 72
+==
+Candidate 8
+site . g7248
+polarity . 1
+match_score . 60.45
+neighbor . g7079 g5652
+failing-states . 
+00 . 107
+01 . 28
+passing-states . 
+10 . 49
+00 . 52
+01 . 31
+==
+Candidate 9
+site . g7079
+polarity . 1
+match_score . 59.7
+neighbor . g4259 g5652 g6677
+failing-states . 
+100 . 107
+010 . 28
+passing-states . 
+101 . 49
+100 . 52
+011 . 11
+010 . 20
+==
+Candidate 10
+site . g7079->g7248
+polarity . 1
+match_score . 59.7
+neighbor . g4259 g5652 g6677
+failing-states . 
+100 . 107
+010 . 28
+passing-states . 
+101 . 49
+100 . 52
+011 . 11
+010 . 20
+==
+Candidate 11
+site . g6677->g7079
+polarity . 1
+match_score . 59.7
+neighbor . g4259 I11987 g5101
+failing-states . 
+110 . 51
+100 . 56
+011 . 11
+001 . 17
+passing-states . 
+100 . 49
+110 . 52
+001 . 11
+011 . 20
+==
+Candidate 12
+site . g4960
+polarity . 1
+match_score . 51.15
+neighbor . g4259
+failing-states . 
+1 . 107
+0 . 28
+passing-states . 
+1 . 101
+0 . 31
+==
+Candidate 13
+site . g4259->g4960
+polarity . 1
+match_score . 51.15
+neighbor . I8196 g6677
+failing-states . 
+00 . 107
+10 . 28
+passing-states . 
+01 . 49
+00 . 52
+11 . 11
+10 . 20
+==
+Candidate 14
+site . I10135
+polarity . 1
+match_score . 51.15
+neighbor . g4960
+failing-states . 
+0 . 107
+1 . 28
+passing-states . 
+0 . 101
+1 . 31
+==
+Candidate 15
+site . g4960->I10135
+polarity . 1
+match_score . 51.15
+neighbor . g4259
+failing-states . 
+1 . 107
+0 . 28
+passing-states . 
+1 . 101
+0 . 31
+==
+Candidate 16
+site . g5652
+polarity . 1
+match_score . 51.15
+neighbor . g7079 I10135
+failing-states . 
+01 . 107
+00 . 28
+passing-states . 
+11 . 49
+01 . 52
+00 . 31
+==
+Candidate 17
+site . I10135->g5652
+polarity . 1
+match_score . 51.15
+neighbor . g4960
+failing-states . 
+0 . 107
+1 . 28
+passing-states . 
+0 . 101
+1 . 31
+==
+Candidate 18
+site . g5652->g7248
+polarity . 1
+match_score . 51.15
+neighbor . g7079 I10135
+failing-states . 
+01 . 107
+00 . 28
+passing-states . 
+11 . 49
+01 . 52
+00 . 31
+==

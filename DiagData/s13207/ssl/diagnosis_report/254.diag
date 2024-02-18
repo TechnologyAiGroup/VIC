@@ -1,0 +1,48 @@
+run_diagnosis ./tmax_fail/254.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 36 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/254.fail
+ #failing_pat=23, #failures=36, #defects=2, #faults=6, CPU_time=0.03
+ Simulated : #failing_pat=23, #passing_pat=96, #failures=36
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=7, #passing_pat=112, #failures=7
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=7, passing=119>
+ sa01   DS   g_g7837/ZN   (AND2_X1)
+ sa01   --   g_I14643/ZN   (INV_X1)
+ sa01   --   g_I14643/A   (INV_X1)
+ sa01   --   g_g8510/ZN   (INV_X1)
+ sa01   --   g_g8510/A   (INV_X1)
+ sa01   --   g_I14996/ZN   (INV_X1)
+ sa01   --   g_I14996/A   (INV_X1)
+ sa01   --   g_g8792/ZN   (INV_X1)
+ sa01   --   g_g8792/A   (INV_X1)
+ sa01   --   g_I15199/ZN   (INV_X1)
+ sa01   --   g_I15199/A   (INV_X1)
+ sa01   --   g_g8871/ZN   (INV_X1)
+ sa01   --   g_g8871/A   (INV_X1)
+ sa01   --   g_tmp_wire_240/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=7, passing=119>
+ sa01   DS   g_tmp_wire_240/Z   (MUX2_X1)
+ sa01   --   g_g1025/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=4, #failing_pat=5, #passing_pat=114, #failures=5
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=121>
+ sa01   DS   g_g3220/ZN   (INV_X1)
+ sa01   --   g_g3220/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=28.57%, #explained patterns: <failing=2, passing=119>
+ sa1   DS   g_I8121/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=28.57%, #explained patterns: <failing=2, passing=119>
+ sa1   DS   g_I8120/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=28.57%, #explained patterns: <failing=2, passing=119>
+ sa1   DS   g_I8119/ZN   (NAND2_X1)
+ sa0   --   g_I8119/A1   (NAND2_X1)
+ sa0   --   g_I8119/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2540.diag

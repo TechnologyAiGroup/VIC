@@ -1,0 +1,47 @@
+run_diagnosis ./tmax_fail/940.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 111 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/940.fail
+ #failing_pat=111, #failures=111, #defects=2, #faults=4, CPU_time=0.11
+ Simulated : #failing_pat=111, #passing_pat=96, #failures=111
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=72, #passing_pat=135, #failures=72
+ ------------------------------------------------------------------------------
+ match=55.56%, #explained patterns: <failing=40, passing=135>
+ sa01   DS   g_g6976/ZN   (AND2_X1)
+ sa01   --   g_g7131/ZN   (INV_X1)
+ sa01   --   g_g7131/A   (INV_X1)
+ sa01   --   g_I13422/ZN   (INV_X1)
+ sa01   --   g_I13422/A   (INV_X1)
+ sa01   --   g_g7334/ZN   (INV_X1)
+ sa01   --   g_g7334/A   (INV_X1)
+ sa01   --   g_I13719/ZN   (INV_X1)
+ sa01   --   g_I13719/A   (INV_X1)
+ sa01   --   g_g7513/ZN   (INV_X1)
+ sa01   --   g_g7513/A   (INV_X1)
+ sa01   --   g_tmp_wire_617/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=54.17%, #explained patterns: <failing=39, passing=135>
+ sa01   DS   g_g4399/ZN   (NAND2_X1)
+ sa01   --   g_g6976/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=48.61%, #explained patterns: <failing=35, passing=135>
+ sa01   DS   g_I8394/ZN   (NAND2_X1)
+ sa01   --   g_g4399/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=39, #passing_pat=168, #failures=39
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=168>
+ sa01   DS   g_g7252/ZN   (AND2_X1)
+ sa01   --   g_I13583/ZN   (INV_X1)
+ sa01   --   g_I13583/A   (INV_X1)
+ sa01   --   g_g7442/ZN   (INV_X1)
+ sa01   --   g_g7442/A   (INV_X1)
+ sa01   --   g_I13722/ZN   (INV_X1)
+ sa01   --   g_I13722/A   (INV_X1)
+ sa01   --   g_g7514/ZN   (INV_X1)
+ sa01   --   g_g7514/A   (INV_X1)
+ sa01   --   g7514   (_PO)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/941.diag

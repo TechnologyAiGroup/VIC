@@ -1,0 +1,39 @@
+run_diagnosis ./tmax_fail/1038.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 46 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1038.fail
+ #failing_pat=34, #failures=46, #defects=2, #faults=4, CPU_time=0.12
+ Simulated : #failing_pat=34, #passing_pat=96, #failures=46
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=27, #passing_pat=103, #failures=39
+ ------------------------------------------------------------------------------
+ match=55.10%, #explained patterns: <failing=15, passing=93>
+ sa01   DS   g_g945/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=39.02%, #explained patterns: <failing=8, passing=103>
+ sa01   DS   g_g1898/ZN   (AND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=2, #failing_pat=7, #passing_pat=123, #failures=7
+ ------------------------------------------------------------------------------
+ match=85.71%, #explained patterns: <failing=6, passing=123>
+ sa01   DS   g_g7833/ZN   (AND2_X1)
+ sa01   --   g_I14623/ZN   (INV_X1)
+ sa01   --   g_I14623/A   (INV_X1)
+ sa01   --   g_g8442/ZN   (INV_X1)
+ sa01   --   g_g8442/A   (INV_X1)
+ sa01   --   g_I14974/ZN   (INV_X1)
+ sa01   --   g_I14974/A   (INV_X1)
+ sa01   --   g_g8778/ZN   (INV_X1)
+ sa01   --   g_g8778/A   (INV_X1)
+ sa01   --   g_I15196/ZN   (INV_X1)
+ sa01   --   g_I15196/A   (INV_X1)
+ sa01   --   g_g8870/ZN   (INV_X1)
+ sa01   --   g_g8870/A   (INV_X1)
+ sa01   --   g_tmp_wire_239/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=85.71%, #explained patterns: <failing=6, passing=123>
+ sa01   DS   g_tmp_wire_239/Z   (MUX2_X1)
+ sa01   --   g_g1021/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/104.diag

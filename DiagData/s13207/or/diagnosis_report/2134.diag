@@ -1,0 +1,46 @@
+run_diagnosis ./tmax_fail/2134.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 85 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2134.fail
+ #failing_pat=75, #failures=85, #defects=2, #faults=7, CPU_time=0.24
+ Simulated : #failing_pat=75, #passing_pat=96, #failures=85
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=45, #passing_pat=126, #failures=45
+ ------------------------------------------------------------------------------
+ match=97.83%, #explained patterns: <failing=45, passing=124>
+ sa01   DS   g_g1381/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=6, #failing_pat=30, #passing_pat=141, #failures=40
+ ------------------------------------------------------------------------------
+ match=77.27%, #explained patterns: <failing=20, passing=141>
+ sa01   DS   g_g2555/ZN   (INV_X1)
+ sa01   --   g_g2555/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=77.27%, #explained patterns: <failing=20, passing=141>
+ sa01   DS   g_g2801/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=75.00%, #explained patterns: <failing=20, passing=141>
+ sa01   DS   g_I8268/ZN   (INV_X1)
+ sa01   --   g_I8268/A   (INV_X1)
+ sa01   --   g_g4303/ZN   (INV_X1)
+ sa01   --   g_g4303/A   (INV_X1)
+ sa01   --   g_I8880/ZN   (INV_X1)
+ sa01   --   g_I8880/A   (INV_X1)
+ sa01   --   g_g4655/ZN   (INV_X1)
+ sa01   --   g_g4655/A   (INV_X1)
+ sa01   --   g4655   (_PO)
+ ------------------------------------------------------------------------------
+ match=61.90%, #explained patterns: <failing=15, passing=141>
+ sa01   DS   g_I6540/ZN   (NAND2_X1)
+ sa01   --   g_g2801/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=61.36%, #explained patterns: <failing=16, passing=141>
+ sa01   DS   g_I6539/ZN   (NAND2_X1)
+ sa01   --   g_g2801/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=53.49%, #explained patterns: <failing=15, passing=141>
+ sa01   DS   g_I6538/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2136.diag

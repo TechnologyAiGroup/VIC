@@ -1,0 +1,41 @@
+==
+Candidate 0
+site . I5989
+polarity . 1
+match_score . 100.0
+neighbor . g1460
+failing-states . 
+1 . 144
+passing-states . 
+0 . 123
+==
+Candidate 1
+site . g1460->I5989
+polarity . 1
+match_score . 100.0
+neighbor . 
+failing-states . 
+ . 144
+passing-states . 
+ . 123
+==
+Candidate 2
+site . g2246
+polarity . 1
+match_score . 100.0
+neighbor . I5989
+failing-states . 
+0 . 144
+passing-states . 
+1 . 123
+==
+Candidate 3
+site . I5989->g2246
+polarity . 1
+match_score . 100.0
+neighbor . g1460
+failing-states . 
+1 . 144
+passing-states . 
+0 . 123
+==

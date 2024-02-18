@@ -1,0 +1,39 @@
+run_diagnosis ./tmax_fail/1935.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 339 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1935.fail
+ #failing_pat=160, #failures=339, #defects=3, #faults=5, CPU_time=0.68
+ Simulated : #failing_pat=160, #passing_pat=96, #failures=339
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=69, #passing_pat=187, #failures=69
+ ------------------------------------------------------------------------------
+ match=97.18%, #explained patterns: <failing=69, passing=186>
+ sa01   DS   g_g1365/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=2, #failing_pat=62, #passing_pat=194, #failures=62
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=62, passing=194>
+ sa01   DS   g_I10810/ZN   (INV_X1)
+ sa01   --   g_I10810/A   (INV_X1)
+ sa01   --   g_g6149/ZN   (INV_X1)
+ sa01   --   g_g6149/A   (INV_X1)
+ sa01   --   g_I11248/ZN   (INV_X1)
+ sa01   --   g_I11248/A   (INV_X1)
+ sa01   --   g_g6307/ZN   (INV_X1)
+ sa01   --   g_g6307/A   (INV_X1)
+ sa01   --   g_tmp_wire_27/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=62, passing=194>
+ sa01   DS   g_tmp_wire_27/Z   (MUX2_X1)
+ sa01   --   g_g44/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 3: stuck fault model, #faults=2, #failing_pat=39, #passing_pat=217, #failures=48
+ ------------------------------------------------------------------------------
+ match=84.21%, #explained patterns: <failing=39, passing=217>
+ sa01   DS   g_g9179/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=84.21%, #explained patterns: <failing=39, passing=217>
+ sa01   DS   g_g9190/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1936.diag

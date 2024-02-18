@@ -1,0 +1,75 @@
+run_diagnosis ./tmax_fail/926.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 196 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/926.fail
+ #failing_pat=148, #failures=196, #defects=2, #faults=13, CPU_time=0.20
+ Simulated : #failing_pat=148, #passing_pat=96, #failures=196
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=12, #failing_pat=126, #passing_pat=118, #failures=174
+ ------------------------------------------------------------------------------
+ match=32.46%, #explained patterns: <failing=20, passing=118>
+ sa01   DS   g_g3310/ZN   (NOR2_X1)
+ ------------------------------------------------------------------------------
+ match=28.71%, #explained patterns: <failing=8, passing=98>
+ sa01   DS   g_g936/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=26.60%, #explained patterns: <failing=17, passing=118>
+ sa01   DS   g_g3310/A2   (NOR2_X1)
+ ------------------------------------------------------------------------------
+ match=26.44%, #explained patterns: <failing=19, passing=118>
+ sa01   DS   g_g4676/ZN   (NOR2_X1)
+ sa01   --   g_I9974/ZN   (INV_X1)
+ sa01   --   g_I9974/A   (INV_X1)
+ sa01   --   g_g5551/ZN   (INV_X1)
+ sa01   --   g_g5551/A   (INV_X1)
+ sa01   --   g_I10262/ZN   (INV_X1)
+ sa01   --   g_I10262/A   (INV_X1)
+ sa01   --   g_g5735/ZN   (INV_X1)
+ sa01   --   g_g5735/A   (INV_X1)
+ sa01   --   g_tmp_wire_633/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=26.44%, #explained patterns: <failing=19, passing=118>
+ sa01   DS   g_tmp_wire_633/Z   (MUX2_X1)
+ sa01   --   g_g940/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=25.29%, #explained patterns: <failing=17, passing=118>
+ sa01   DS   g_g4349/ZN   (NOR2_X1)
+ sa01   --   g_I9209/ZN   (INV_X1)
+ sa01   --   g_I9209/A   (INV_X1)
+ sa01   --   g_g4867/ZN   (INV_X1)
+ sa01   --   g_g4867/A   (INV_X1)
+ sa01   --   g_I9630/ZN   (INV_X1)
+ sa01   --   g_I9630/A   (INV_X1)
+ sa01   --   g_g5168/ZN   (INV_X1)
+ sa01   --   g_g5168/A   (INV_X1)
+ sa01   --   g_tmp_wire_632/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=25.29%, #explained patterns: <failing=17, passing=118>
+ sa01   DS   g_tmp_wire_632/Z   (MUX2_X1)
+ sa01   --   g_g936/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=23.56%, #explained patterns: <failing=15, passing=118>
+ sa01   DS   g_g3885/ZN   (NOR2_X1)
+ sa01   --   g_g4676/A1   (NOR2_X1)
+ ------------------------------------------------------------------------------
+ match=18.39%, #explained patterns: <failing=9, passing=118>
+ sa01   DS   g_g3885/A1   (NOR2_X1)
+ ------------------------------------------------------------------------------
+ match=17.82%, #explained patterns: <failing=11, passing=118>
+ sa01   DS   g_g3094/ZN   (AND2_X1)
+ sa01   --   g_g4676/A2   (NOR2_X1)
+ ------------------------------------------------------------------------------
+ match=17.24%, #explained patterns: <failing=12, passing=118>
+ sa01   DS   g_g4349/A2   (NOR2_X1)
+ ------------------------------------------------------------------------------
+ match=13.68%, #explained patterns: <failing=14, passing=87>
+ sa1   DS   g_tmp_wire_632/S   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=22, #passing_pat=222, #failures=22
+ ------------------------------------------------------------------------------
+ match=95.65%, #explained patterns: <failing=22, passing=221>
+ sa01   DS   g_g1378/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/927.diag

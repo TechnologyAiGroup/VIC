@@ -1,0 +1,23 @@
+run_diagnosis ./tmax_fail/1606.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 110 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1606.fail
+ #failing_pat=110, #failures=110, #defects=1, #faults=1, CPU_time=0.03
+ Simulated : #failing_pat=110, #passing_pat=96, #failures=110
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=52, #passing_pat=154, #failures=52
+ ------------------------------------------------------------------------------
+ match=88.46%, #explained patterns: <failing=46, passing=154>
+ sa01   DS   g_g7426/ZN   (OR3_X1)
+ sa01   --   g_I13819/ZN   (INV_X1)
+ sa01   --   g_I13819/A   (INV_X1)
+ sa01   --   g_g7545/ZN   (INV_X1)
+ sa01   --   g_g7545/A   (INV_X1)
+ sa01   --   g_I14172/ZN   (INV_X1)
+ sa01   --   g_I14172/A   (INV_X1)
+ sa01   --   g_g7767/ZN   (INV_X1)
+ sa01   --   g_g7767/A   (INV_X1)
+ sa01   --   g_tmp_wire_267/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1609.diag

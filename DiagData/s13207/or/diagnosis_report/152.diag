@@ -1,0 +1,367 @@
+run_diagnosis ./tmax_fail/152.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 605 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/152.fail
+ #failing_pat=127, #failures=605, #defects=2, #faults=98, CPU_time=1.02
+ Simulated : #failing_pat=127, #passing_pat=96, #failures=605
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=96, #failing_pat=39, #passing_pat=184, #failures=77
+ ------------------------------------------------------------------------------
+ match=26.25%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_g9239/ZN   (OR2_X1)
+ sa01   --   g_I15990/ZN   (INV_X1)
+ sa01   --   g_I15990/A   (INV_X1)
+ sa01   --   g_g9260/ZN   (INV_X1)
+ sa01   --   g_g9260/A   (INV_X1)
+ sa01   --   g_g9301/ZN   (INV_X1)
+ sa01   --   g_g9301/A   (INV_X1)
+ sa01   --   g_g9303/ZN   (INV_X1)
+ sa01   --   g_g9303/A   (INV_X1)
+ sa01   --   g_I16072/ZN   (INV_X1)
+ sa01   --   g_I16072/A   (INV_X1)
+ sa01   --   g_g9324/ZN   (INV_X1)
+ sa01   --   g_g9324/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=26.25%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I16084/ZN   (INV_X1)
+ sa01   --   g_I16084/A   (INV_X1)
+ sa01   --   g_g9336/ZN   (INV_X1)
+ sa01   --   g_g9336/A   (INV_X1)
+ sa01   --   g_I16090/ZN   (INV_X1)
+ sa01   --   g_I16090/A   (INV_X1)
+ sa01   --   g_g9340/ZN   (INV_X1)
+ sa01   --   g_g9340/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=26.25%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_g9363/ZN   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=25.97%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_g6695/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=25.97%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_g6701/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=25.97%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_g6709/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=25.97%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_g6722/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=25.97%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_g7065/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=25.97%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_g7082/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=25.97%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_g7257/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=25.97%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_I13640/ZN   (NAND2_X1)
+ sa01   --   g_g7480/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=25.97%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_g7480/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15882/ZN   (NAND2_X1)
+ sa01   --   g_g9202/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_g9191/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15850/ZN   (NAND2_X1)
+ sa01   --   g_g9190/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_g9205/ZN   (NAND2_X1)
+ sa01   --   g_g9220/ZN   (INV_X1)
+ sa01   --   g_g9220/A   (INV_X1)
+ sa01   --   g_g9226/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_g9226/ZN   (AND2_X1)
+ sa01   --   g_g9239/A2   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15818/ZN   (NAND2_X1)
+ sa01   --   g_g9179/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=24.68%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_I14019/ZN   (INV_X1)
+ sa01   --   g_I14019/A   (INV_X1)
+ sa01   --   g_g7714/ZN   (INV_X1)
+ sa01   --   g_g7714/A   (INV_X1)
+ sa01   --   g_I14070/ZN   (INV_X1)
+ sa01   --   g_I14070/A   (INV_X1)
+ sa01   --   g_g7733/ZN   (INV_X1)
+ sa01   --   g_g7733/A   (INV_X1)
+ sa01   --   g_tmp_wire_302/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=24.68%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_tmp_wire_302/Z   (MUX2_X1)
+ sa01   --   g_g55/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=24.05%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15857/ZN   (NAND2_X1)
+ sa01   --   g_g9191/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=23.75%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15889/ZN   (NAND2_X1)
+ sa01   --   g_g9203/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=23.75%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_g9359/ZN   (AND2_X1)
+ sa01   --   g_g9363/A1   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=23.75%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_g9359/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=23.38%, #explained patterns: <failing=9, passing=184>
+ sa01   DS   g_I12016/ZN   (NAND2_X1)
+ sa01   --   g_g6695/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=23.38%, #explained patterns: <failing=8, passing=184>
+ sa01   DS   g_I12032/ZN   (NAND2_X1)
+ sa01   --   g_g6701/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=23.38%, #explained patterns: <failing=9, passing=184>
+ sa01   DS   g_I12079/ZN   (NAND2_X1)
+ sa01   --   g_g6722/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=23.38%, #explained patterns: <failing=9, passing=184>
+ sa01   DS   g_I13213/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=23.38%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_I13638/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=23.38%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_I13638/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=23.38%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_I13640/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=23.38%, #explained patterns: <failing=9, passing=184>
+ sa01   DS   g_I12031/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=22.78%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15889/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=22.50%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15882/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=22.50%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15856/ZN   (NAND2_X1)
+ sa01   --   g_g9191/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=22.50%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15898/ZN   (NAND2_X1)
+ sa01   --   g_g9205/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=22.50%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15899/ZN   (NAND2_X1)
+ sa01   --   g_g9205/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=22.50%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15818/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=22.08%, #explained patterns: <failing=9, passing=184>
+ sa01   DS   g_I12015/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=22.08%, #explained patterns: <failing=10, passing=184>
+ sa01   DS   g_I12053/ZN   (NAND2_X1)
+ sa01   --   g_g6709/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=22.08%, #explained patterns: <failing=8, passing=184>
+ sa01   DS   g_I12852/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=21.25%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15899/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=21.25%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15898/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=20.78%, #explained patterns: <failing=7, passing=184>
+ sa01   DS   g_I12032/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=20.78%, #explained patterns: <failing=7, passing=184>
+ sa01   DS   g_I12051/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=20.78%, #explained patterns: <failing=7, passing=184>
+ sa01   DS   g_I12031/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=20.78%, #explained patterns: <failing=7, passing=184>
+ sa01   DS   g_I12832/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=19.48%, #explained patterns: <failing=8, passing=184>
+ sa01   DS   g_I12015/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=19.48%, #explained patterns: <failing=8, passing=184>
+ sa01   DS   g_I12016/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=19.48%, #explained patterns: <failing=8, passing=184>
+ sa01   DS   g_I12834/ZN   (NAND2_X1)
+ sa01   --   g_g7065/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=19.48%, #explained patterns: <failing=6, passing=184>
+ sa01   DS   g_I13215/ZN   (NAND2_X1)
+ sa01   --   g_g7257/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=19.48%, #explained patterns: <failing=5, passing=184>
+ sa01   DS   g_I12078/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=18.99%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15850/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=18.75%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15855/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=18.18%, #explained patterns: <failing=9, passing=184>
+ sa01   DS   g_I12853/ZN   (NAND2_X1)
+ sa01   --   g_g7082/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=18.18%, #explained patterns: <failing=6, passing=184>
+ sa01   DS   g_I13214/ZN   (NAND2_X1)
+ sa01   --   g_g7257/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=17.72%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15857/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=17.72%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15855/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=16.88%, #explained patterns: <failing=7, passing=184>
+ sa01   DS   g_I12051/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=16.88%, #explained patterns: <failing=7, passing=184>
+ sa01   DS   g_I12053/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=16.88%, #explained patterns: <failing=4, passing=184>
+ sa01   DS   g_I12079/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=16.88%, #explained patterns: <failing=7, passing=184>
+ sa01   DS   g_I12080/ZN   (NAND2_X1)
+ sa01   --   g_g6722/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=16.88%, #explained patterns: <failing=7, passing=184>
+ sa01   DS   g_I12833/ZN   (NAND2_X1)
+ sa01   --   g_g7065/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=16.88%, #explained patterns: <failing=6, passing=184>
+ sa01   DS   g_I12854/ZN   (NAND2_X1)
+ sa01   --   g_g7082/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=16.88%, #explained patterns: <failing=5, passing=184>
+ sa01   DS   g_I13213/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=16.88%, #explained patterns: <failing=5, passing=184>
+ sa01   DS   g_I13215/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=16.88%, #explained patterns: <failing=4, passing=184>
+ sa01   DS   g_I12078/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=16.25%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15855/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=15.58%, #explained patterns: <failing=7, passing=184>
+ sa01   DS   g_I12017/ZN   (NAND2_X1)
+ sa01   --   g_g6695/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=15.58%, #explained patterns: <failing=5, passing=184>
+ sa01   DS   g_I12052/ZN   (NAND2_X1)
+ sa01   --   g_g6709/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=15.58%, #explained patterns: <failing=8, passing=184>
+ sa01   DS   g_I12053/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=15.58%, #explained patterns: <failing=8, passing=184>
+ sa01   DS   g_I12079/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=15.58%, #explained patterns: <failing=5, passing=184>
+ sa01   DS   g_I13213/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=15.58%, #explained patterns: <failing=5, passing=184>
+ sa01   DS   g_I13214/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=14.29%, #explained patterns: <failing=4, passing=184>
+ sa01   DS   g_I12016/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=14.29%, #explained patterns: <failing=5, passing=184>
+ sa01   DS   g_I12033/ZN   (NAND2_X1)
+ sa01   --   g_g6701/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=14.29%, #explained patterns: <failing=6, passing=184>
+ sa01   DS   g_I12032/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=14.29%, #explained patterns: <failing=6, passing=184>
+ sa01   DS   g_I12834/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=14.29%, #explained patterns: <failing=5, passing=184>
+ sa01   DS   g_I12834/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=14.29%, #explained patterns: <failing=7, passing=184>
+ sa01   DS   g_I12852/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=14.29%, #explained patterns: <failing=7, passing=184>
+ sa01   DS   g_I12853/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=14.29%, #explained patterns: <failing=5, passing=184>
+ sa01   DS   g_I12832/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=12.99%, #explained patterns: <failing=4, passing=184>
+ sa01   DS   g_I12852/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=12.99%, #explained patterns: <failing=6, passing=184>
+ sa01   DS   g_I12853/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=12.99%, #explained patterns: <failing=4, passing=184>
+ sa01   DS   g_I12854/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=11.69%, #explained patterns: <failing=6, passing=184>
+ sa01   DS   g_I12015/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=11.69%, #explained patterns: <failing=6, passing=184>
+ sa01   DS   g_I12017/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=11.69%, #explained patterns: <failing=4, passing=184>
+ sa01   DS   g_I12033/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=11.69%, #explained patterns: <failing=4, passing=184>
+ sa01   DS   g_I12833/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=11.69%, #explained patterns: <failing=5, passing=184>
+ sa01   DS   g_I12833/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=11.69%, #explained patterns: <failing=3, passing=184>
+ sa01   DS   g_I12854/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=11.69%, #explained patterns: <failing=2, passing=184>
+ sa01   DS   g_I13640/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=11.69%, #explained patterns: <failing=4, passing=184>
+ sa01   DS   g_I12031/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=11.69%, #explained patterns: <failing=4, passing=184>
+ sa01   DS   g_I12832/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=9.09%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15857/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=9.09%, #explained patterns: <failing=0, passing=184>
+ sa01   DS   g_I15818/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=2, #failing_pat=88, #passing_pat=135, #failures=528
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=88, passing=135>
+ sa01   DS   g_I5989/ZN   (INV_X1)
+ sa01   --   g_I5989/A   (INV_X1)
+ sa01   --   g_g2246/ZN   (INV_X1)
+ sa01   --   g_g2246/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=84.75%, #explained patterns: <failing=26, passing=97>
+ sa01   DS   g_g1460/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1521.diag

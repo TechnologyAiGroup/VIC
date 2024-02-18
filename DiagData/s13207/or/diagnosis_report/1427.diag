@@ -1,0 +1,50 @@
+run_diagnosis ./tmax_fail/1427.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 897 failures were checked
+ ./tmax_fail/1427.fail scan chain diagnosis results: #failing_patterns=75
+ ------------------------------------------------------------------------------
+ defect type=stuck-at-X
+ match=99.77% chain=s1 position=30 master=g_g863/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=31 master=g_g859/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=32 master=g_g855/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=33 master=g_g944/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=34 master=g_g942/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=35 master=g_g940/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=36 master=g_g936/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=37 master=g_g943/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=38 master=g_g954/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=39 master=g_g953/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=40 master=g_g952/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=41 master=g_g951/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=42 master=g_g950/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=43 master=g_g949/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=44 master=g_g948/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=45 master=g_g945/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=46 master=g_g959/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=47 master=g_g955/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=48 master=g_g789/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=49 master=g_g786/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=50 master=g_g828/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=51 master=g_g825/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=52 master=g_g822/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=53 master=g_g819/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=54 master=g_g815/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=55 master=g_g778/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=56 master=g_g775/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=57 master=g_g812/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=58 master=g_g809/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=59 master=g_g806/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=60 master=g_g803/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=61 master=g_g799/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=62 master=g_g782/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=63 master=g_g792/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=64 master=g_g795/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=65 master=g_g774/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=66 master=g_g773/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=67 master=g_g772/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=68 master=g_g771/seq_DFF_X10 (seq_DFF_X1)
+ match=99.77% chain=s1 position=69 master=g_g770/seq_DFF_X10 (seq_DFF_X1)
+ CPU_time=0.02 #sim_patterns=74 #sim_failures=872
+ Warning: 192 passing patterns were ignored during chain diagnosis (pat1=1). (M633)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1428.diag

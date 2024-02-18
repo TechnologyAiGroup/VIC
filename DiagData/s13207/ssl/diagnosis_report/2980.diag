@@ -1,0 +1,34 @@
+run_diagnosis ./tmax_fail/2980.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 75 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2980.fail
+ #failing_pat=75, #failures=75, #defects=1, #faults=4, CPU_time=0.05
+ Simulated : #failing_pat=75, #passing_pat=96, #failures=75
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=40, #passing_pat=131, #failures=40
+ ------------------------------------------------------------------------------
+ match=92.50%, #explained patterns: <failing=37, passing=131>
+ sa01   DS   g_g5545/ZN   (OR2_X1)
+ sa01   --   g_I10708/ZN   (INV_X1)
+ sa01   --   g_I10708/A   (INV_X1)
+ sa01   --   g_g6088/ZN   (INV_X1)
+ sa01   --   g_g6088/A   (INV_X1)
+ sa01   --   g_I11464/ZN   (INV_X1)
+ sa01   --   g_I11464/A   (INV_X1)
+ sa01   --   g_g6379/ZN   (INV_X1)
+ sa01   --   g_g6379/A   (INV_X1)
+ sa01   --   g_tmp_wire_37/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=92.50%, #explained patterns: <failing=37, passing=131>
+ sa01   DS   g_tmp_wire_37/Z   (MUX2_X1)
+ sa01   --   g_g1223/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=62.50%, #explained patterns: <failing=25, passing=131>
+ sa01   DS   g_g4824/ZN   (NAND2_X1)
+ sa01   --   g_g5545/A2   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=62.50%, #explained patterns: <failing=25, passing=131>
+ sa01   DS   g_g4231/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2982.diag

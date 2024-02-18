@@ -1,0 +1,47 @@
+==
+Candidate 0
+site . g1948
+polarity . 1
+match_score . 82.92
+neighbor . g1250
+failing-states . 
+1 . 80
+0 . 61
+passing-states . 
+0 . 64
+1 . 62
+==
+Candidate 1
+site . g1250->g1948
+polarity . 1
+match_score . 82.92
+neighbor . 
+failing-states . 
+ . 141
+passing-states . 
+ . 126
+==
+Candidate 2
+site . g3071
+polarity . 1
+match_score . 82.92
+neighbor . g1948
+failing-states . 
+0 . 80
+1 . 61
+passing-states . 
+1 . 64
+0 . 62
+==
+Candidate 3
+site . g1948->g3071
+polarity . 1
+match_score . 82.92
+neighbor . g1250
+failing-states . 
+1 . 80
+0 . 61
+passing-states . 
+0 . 64
+1 . 62
+==

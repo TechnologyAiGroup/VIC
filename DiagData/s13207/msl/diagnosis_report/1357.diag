@@ -1,0 +1,46 @@
+run_diagnosis ./tmax_fail/1357.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 198 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1357.fail
+ #failing_pat=149, #failures=198, #defects=2, #faults=4, CPU_time=0.27
+ Simulated : #failing_pat=149, #passing_pat=96, #failures=198
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=138, #passing_pat=107, #failures=180
+ ------------------------------------------------------------------------------
+ match=40.56%, #explained patterns: <failing=52, passing=107>
+ sa01   DS   g_I6770/ZN   (INV_X1)
+ sa01   --   g_I6770/A   (INV_X1)
+ sa01   --   g_g3018/ZN   (INV_X1)
+ sa01   --   g_g3018/A   (INV_X1)
+ sa01   --   g_I7368/ZN   (INV_X1)
+ sa01   --   g_I7368/A   (INV_X1)
+ sa01   --   g_g3855/ZN   (INV_X1)
+ sa01   --   g_g3855/A   (INV_X1)
+ sa01   --   g_tmp_wire_656/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=38.24%, #explained patterns: <failing=35, passing=107>
+ sa01   DS   g_I5466/ZN   (INV_X1)
+ sa01   --   g_I5466/A   (INV_X1)
+ sa01   --   g_g1590/ZN   (INV_X1)
+ sa01   --   g_g1590/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=9.44%, #explained patterns: <failing=0, passing=107>
+ sa01   DS   g_g6459/ZN   (OR3_X1)
+ sa01   --   g_I12659/ZN   (INV_X1)
+ sa01   --   g_I12659/A   (INV_X1)
+ sa01   --   g_g6950/ZN   (INV_X1)
+ sa01   --   g_g6950/A   (INV_X1)
+ sa01   --   g_I12891/ZN   (INV_X1)
+ sa01   --   g_I12891/A   (INV_X1)
+ sa01   --   g_g7101/ZN   (INV_X1)
+ sa01   --   g_g7101/A   (INV_X1)
+ sa01   --   g_tmp_wire_666/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=18, #passing_pat=227, #failures=18
+ ------------------------------------------------------------------------------
+ match=81.82%, #explained patterns: <failing=17, passing=226>
+ sa01   DS   g_g381/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1358.diag

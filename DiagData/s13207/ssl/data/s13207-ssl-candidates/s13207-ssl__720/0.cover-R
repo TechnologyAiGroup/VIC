@@ -1,0 +1,43 @@
+==
+Candidate 0
+site . I5897
+polarity . 1
+match_score . 95.27
+neighbor . g173
+failing-states . 
+1 . 122
+passing-states . 
+0 . 145
+==
+Candidate 1
+site . g173->I5897
+polarity . 1
+match_score . 95.27
+neighbor . 
+failing-states . 
+ . 122
+passing-states . 
+ . 145
+==
+Candidate 2
+site . g2157
+polarity . 1
+match_score . 95.27
+neighbor . g6007 g8042 I5897
+failing-states . 
+100 . 121
+000 . 1
+passing-states . 
+101 . 143
+001 . 2
+==
+Candidate 3
+site . I5897->g2157
+polarity . 1
+match_score . 95.27
+neighbor . g173
+failing-states . 
+1 . 122
+passing-states . 
+0 . 145
+==

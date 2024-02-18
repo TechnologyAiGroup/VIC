@@ -1,0 +1,150 @@
+==
+Candidate 0
+site . g6259->g6458
+polarity . 1
+match_score . 50.0
+neighbor . g6174 I11603 g6185 g3002 g6184 g5312 g6214
+failing-states . 
+0000010 . 21
+0001011 . 2
+0000000 . 6
+0000011 . 4
+0100010 . 2
+0001010 . 1
+0000110 . 1
+passing-states . 
+1010010 . 5
+0000000 . 21
+0000010 . 108
+0000110 . 15
+0001010 . 21
+0100010 . 16
+0100110 . 3
+0000011 . 10
+0001000 . 5
+1001010 . 3
+1000010 . 12
+0001110 . 2
+1011010 . 2
+0001011 . 2
+0010010 . 2
+0101010 . 3
+==
+Candidate 1
+site . g6458
+polarity . 1
+match_score . 50.0
+neighbor . g6174 g6184 g6259 g6214
+failing-states . 
+0000 . 24
+0001 . 6
+0010 . 6
+0100 . 1
+passing-states . 
+1000 . 22
+0010 . 21
+0000 . 155
+0100 . 20
+0001 . 12
+==
+Candidate 2
+site . I12655
+polarity . 1
+match_score . 50.0
+neighbor . g6458
+failing-states . 
+0 . 30
+1 . 7
+passing-states . 
+1 . 75
+0 . 155
+==
+Candidate 3
+site . g6458->I12655
+polarity . 1
+match_score . 50.0
+neighbor . g6174 g6184 g6259 g6214
+failing-states . 
+0000 . 24
+0001 . 6
+0010 . 6
+0100 . 1
+passing-states . 
+1000 . 22
+0010 . 21
+0000 . 155
+0100 . 20
+0001 . 12
+==
+Candidate 4
+site . g6948
+polarity . 1
+match_score . 50.0
+neighbor . I12655
+failing-states . 
+1 . 30
+0 . 7
+passing-states . 
+0 . 75
+1 . 155
+==
+Candidate 5
+site . I12655->g6948
+polarity . 1
+match_score . 50.0
+neighbor . g6458
+failing-states . 
+0 . 30
+1 . 7
+passing-states . 
+1 . 75
+0 . 155
+==
+Candidate 6
+site . I12888
+polarity . 1
+match_score . 50.0
+neighbor . g6948
+failing-states . 
+0 . 30
+1 . 7
+passing-states . 
+1 . 75
+0 . 155
+==
+Candidate 7
+site . g6948->I12888
+polarity . 1
+match_score . 50.0
+neighbor . I12655
+failing-states . 
+1 . 30
+0 . 7
+passing-states . 
+0 . 75
+1 . 155
+==
+Candidate 8
+site . g7100
+polarity . 1
+match_score . 50.0
+neighbor . I12888
+failing-states . 
+1 . 30
+0 . 7
+passing-states . 
+0 . 75
+1 . 155
+==
+Candidate 9
+site . I12888->g7100
+polarity . 1
+match_score . 50.0
+neighbor . g6948
+failing-states . 
+0 . 30
+1 . 7
+passing-states . 
+1 . 75
+0 . 155
+==

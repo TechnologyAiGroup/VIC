@@ -1,0 +1,45 @@
+run_diagnosis ./tmax_fail/1502.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 596 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1502.fail
+ #failing_pat=139, #failures=596, #defects=1, #faults=5, CPU_time=0.17
+ Simulated : #failing_pat=139, #passing_pat=96, #failures=596
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=66, #passing_pat=169, #failures=132
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=66, passing=169>
+ sa01   DS   g_I8565/ZN   (INV_X1)
+ sa01   --   g_I8565/A   (INV_X1)
+ sa01   --   g_g4503/ZN   (INV_X1)
+ sa01   --   g_g4503/A   (INV_X1)
+ sa01   --   g_I9350/ZN   (INV_X1)
+ sa01   --   g_I9350/A   (INV_X1)
+ sa01   --   g_g5016/ZN   (INV_X1)
+ sa01   --   g_g5016/A   (INV_X1)
+ sa01   --   g_I10166/ZN   (INV_X1)
+ sa01   --   g_I10166/A   (INV_X1)
+ sa01   --   g_g5677/ZN   (INV_X1)
+ sa01   --   g_g5677/A   (INV_X1)
+ sa01   --   g_I10617/ZN   (INV_X1)
+ sa01   --   g_I10617/A   (INV_X1)
+ sa01   --   g_g6015/ZN   (INV_X1)
+ sa01   --   g_g6015/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=76.74%, #explained patterns: <failing=26, passing=169>
+ sa01   DS   g_g3071/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=76.74%, #explained patterns: <failing=26, passing=169>
+ sa01   DS   g_g1948/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=76.74%, #explained patterns: <failing=26, passing=169>
+ sa01   DS   g_g1948/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=76.74%, #explained patterns: <failing=26, passing=169>
+ sa01   DS   g_g3071/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1503.diag

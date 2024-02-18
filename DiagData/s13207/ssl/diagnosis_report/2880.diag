@@ -1,0 +1,42 @@
+run_diagnosis ./tmax_fail/2880.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 61 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2880.fail
+ #failing_pat=61, #failures=61, #defects=1, #faults=4, CPU_time=0.04
+ Simulated : #failing_pat=61, #passing_pat=96, #failures=61
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=34, #passing_pat=123, #failures=34
+ ------------------------------------------------------------------------------
+ match=91.18%, #explained patterns: <failing=31, passing=123>
+ sa01   DS   g_g6929/ZN   (OR2_X1)
+ sa01   --   g_I12980/ZN   (INV_X1)
+ sa01   --   g_I12980/A   (INV_X1)
+ sa01   --   g_g7132/ZN   (INV_X1)
+ sa01   --   g_g7132/A   (INV_X1)
+ sa01   --   g_I13493/ZN   (INV_X1)
+ sa01   --   g_I13493/A   (INV_X1)
+ sa01   --   g_g7359/ZN   (INV_X1)
+ sa01   --   g_g7359/A   (INV_X1)
+ sa01   --   g_I13912/ZN   (INV_X1)
+ sa01   --   g_I13912/A   (INV_X1)
+ sa01   --   g_g7589/ZN   (INV_X1)
+ sa01   --   g_g7589/A   (INV_X1)
+ sa01   --   g_I14091/ZN   (INV_X1)
+ sa01   --   g_I14091/A   (INV_X1)
+ sa01   --   g_g7740/ZN   (INV_X1)
+ sa01   --   g_g7740/A   (INV_X1)
+ sa01   --   g_tmp_wire_327/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=91.18%, #explained patterns: <failing=31, passing=123>
+ sa01   DS   g_tmp_wire_327/Z   (MUX2_X1)
+ sa01   --   g_g158/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=88.24%, #explained patterns: <failing=30, passing=123>
+ sa01   DS   g_g6412/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=88.24%, #explained patterns: <failing=30, passing=123>
+ sa01   DS   g_g6412/ZN   (AND2_X1)
+ sa01   --   g_g6929/A1   (OR2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2881.diag

@@ -1,0 +1,42 @@
+run_diagnosis ./tmax_fail/2027.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 91 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2027.fail
+ #failing_pat=91, #failures=91, #defects=1, #faults=4, CPU_time=0.06
+ Simulated : #failing_pat=91, #passing_pat=96, #failures=91
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=37, #passing_pat=150, #failures=37
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=37, passing=150>
+ sa01   DS   g_g9371/ZN   (AND2_X1)
+ sa01   --   g_g9377/A1   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=37, passing=150>
+ sa01   DS   g_g9377/ZN   (OR2_X1)
+ sa01   --   g_I16165/ZN   (INV_X1)
+ sa01   --   g_I16165/A   (INV_X1)
+ sa01   --   g_g9381/ZN   (INV_X1)
+ sa01   --   g_g9381/A   (INV_X1)
+ sa01   --   g_I16168/ZN   (INV_X1)
+ sa01   --   g_I16168/A   (INV_X1)
+ sa01   --   g_g9382/ZN   (INV_X1)
+ sa01   --   g_g9382/A   (INV_X1)
+ sa01   --   g_I16173/ZN   (INV_X1)
+ sa01   --   g_I16173/A   (INV_X1)
+ sa01   --   g_g9385/ZN   (INV_X1)
+ sa01   --   g_g9385/A   (INV_X1)
+ sa01   --   g_I16176/ZN   (INV_X1)
+ sa01   --   g_I16176/A   (INV_X1)
+ sa01   --   g_g9386/ZN   (INV_X1)
+ sa01   --   g_g9386/A   (INV_X1)
+ sa01   --   g_tmp_wire_667/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=37, passing=150>
+ sa01   DS   g_tmp_wire_667/Z   (MUX2_X1)
+ sa01   --   g_g741/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=97.37%, #explained patterns: <failing=37, passing=149>
+ sa01   DS   g_g741/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2028.diag

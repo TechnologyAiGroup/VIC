@@ -1,0 +1,39 @@
+run_diagnosis ./tmax_fail/2296.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 32 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2296.fail
+ #failing_pat=32, #failures=32, #defects=1, #faults=5, CPU_time=0.04
+ Simulated : #failing_pat=32, #passing_pat=96, #failures=32
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=17, #passing_pat=111, #failures=17
+ ------------------------------------------------------------------------------
+ match=82.35%, #explained patterns: <failing=14, passing=111>
+ sa01   DS   g_g5052/ZN   (OR2_X1)
+ sa01   --   g_I9929/ZN   (INV_X1)
+ sa01   --   g_I9929/A   (INV_X1)
+ sa01   --   g_g5519/ZN   (INV_X1)
+ sa01   --   g_g5519/A   (INV_X1)
+ sa01   --   g_I10286/ZN   (INV_X1)
+ sa01   --   g_I10286/A   (INV_X1)
+ sa01   --   g_g5743/ZN   (INV_X1)
+ sa01   --   g_g5743/A   (INV_X1)
+ sa01   --   g_tmp_wire_111/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=82.35%, #explained patterns: <failing=14, passing=111>
+ sa01   DS   g_tmp_wire_111/Z   (MUX2_X1)
+ sa01   --   g_g1317/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=76.47%, #explained patterns: <failing=13, passing=111>
+ sa01   DS   g_g4054/ZN   (AND2_X1)
+ sa01   --   g_g5052/A2   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=70.59%, #explained patterns: <failing=12, passing=111>
+ sa01   DS   g_g4049/ZN   (AND2_X1)
+ sa01   --   g_g5052/A1   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=58.82%, #explained patterns: <failing=10, passing=111>
+ sa01   DS   g_g3767/ZN   (NAND2_X1)
+ sa01   --   g_g4054/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2297.diag

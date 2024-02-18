@@ -1,0 +1,164 @@
+==
+Candidate 0
+site . g6458
+polarity . 1
+match_score . 93.33
+neighbor . g6174 g6259 g6214 g6184
+failing-states . 
+0100 . 27
+passing-states . 
+1000 . 22
+0000 . 179
+0001 . 21
+0010 . 18
+==
+Candidate 1
+site . I12655
+polarity . 1
+match_score . 93.33
+neighbor . g6458
+failing-states . 
+0 . 27
+passing-states . 
+1 . 61
+0 . 179
+==
+Candidate 2
+site . g6458->I12655
+polarity . 1
+match_score . 93.33
+neighbor . g6174 g6259 g6214 g6184
+failing-states . 
+0100 . 27
+passing-states . 
+1000 . 22
+0000 . 179
+0001 . 21
+0010 . 18
+==
+Candidate 3
+site . g6948
+polarity . 1
+match_score . 93.33
+neighbor . I12655
+failing-states . 
+1 . 27
+passing-states . 
+0 . 61
+1 . 179
+==
+Candidate 4
+site . I12655->g6948
+polarity . 1
+match_score . 93.33
+neighbor . g6458
+failing-states . 
+0 . 27
+passing-states . 
+1 . 61
+0 . 179
+==
+Candidate 5
+site . I12888
+polarity . 1
+match_score . 93.33
+neighbor . g6948
+failing-states . 
+0 . 27
+passing-states . 
+1 . 61
+0 . 179
+==
+Candidate 6
+site . g6948->I12888
+polarity . 1
+match_score . 93.33
+neighbor . I12655
+failing-states . 
+1 . 27
+passing-states . 
+0 . 61
+1 . 179
+==
+Candidate 7
+site . g7100
+polarity . 1
+match_score . 93.33
+neighbor . I12888
+failing-states . 
+1 . 27
+passing-states . 
+0 . 61
+1 . 179
+==
+Candidate 8
+site . I12888->g7100
+polarity . 1
+match_score . 93.33
+neighbor . g6948
+failing-states . 
+0 . 27
+passing-states . 
+1 . 61
+0 . 179
+==
+Candidate 9
+site . g6259->g6458
+polarity . 1
+match_score . 86.67
+neighbor . g6174 g5312 g3002 g6185 g6214 g6184 I11603
+failing-states . 
+0000000 . 27
+passing-states . 
+1101000 . 5
+0100000 . 129
+0100010 . 16
+0110000 . 22
+0100001 . 18
+0110100 . 4
+0100011 . 3
+0100100 . 14
+0010000 . 5
+1110000 . 3
+1100000 . 12
+0110010 . 2
+1111000 . 2
+0101000 . 2
+0110001 . 3
+==
+Candidate 10
+site . g6214
+polarity . 1
+match_score . 86.67
+neighbor . g6174 g878 g5284 g6259 g6184
+failing-states . 
+01110 . 9
+00110 . 18
+passing-states . 
+10100 . 11
+01100 . 95
+00101 . 9
+00100 . 67
+01101 . 12
+01000 . 17
+00000 . 18
+11100 . 11
+==
+Candidate 11
+site . g6214->g6458
+polarity . 1
+match_score . 86.67
+neighbor . g6174 g878 g5284 g6259 g6184
+failing-states . 
+01110 . 9
+00110 . 18
+passing-states . 
+10100 . 11
+01100 . 95
+00101 . 9
+00100 . 67
+01101 . 12
+01000 . 17
+00000 . 18
+11100 . 11
+==

@@ -1,0 +1,20 @@
+run_diagnosis ./tmax_fail/2250.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 80 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2250.fail
+ #failing_pat=6, #failures=80, #defects=2, #faults=2, CPU_time=0.16
+ Simulated : #failing_pat=6, #passing_pat=96, #failures=80
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=1, #passing_pat=101, #failures=16
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=101>
+ sa1   DS   g_I8109/A3   (AND4_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=1, #passing_pat=101, #failures=16
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=101>
+ sa1   DS   g_I8573/ZN   (AND4_X1)
+ sa1   --   g_g4507/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2251.diag

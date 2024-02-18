@@ -1,0 +1,174 @@
+==
+Candidate 0
+site . g7321
+polarity . 1
+match_score . 91.67
+neighbor . g6990 g7187
+failing-states . 
+00 . 124
+passing-states . 
+10 . 65
+00 . 78
+==
+Candidate 1
+site . I13828
+polarity . 1
+match_score . 91.67
+neighbor . g7321
+failing-states . 
+1 . 124
+passing-states . 
+0 . 65
+1 . 78
+==
+Candidate 2
+site . g7321->I13828
+polarity . 1
+match_score . 91.67
+neighbor . g6990 g7187
+failing-states . 
+00 . 124
+passing-states . 
+10 . 65
+00 . 78
+==
+Candidate 3
+site . g7548
+polarity . 1
+match_score . 91.67
+neighbor . I13828
+failing-states . 
+0 . 124
+passing-states . 
+1 . 65
+0 . 78
+==
+Candidate 4
+site . I13828->g7548
+polarity . 1
+match_score . 91.67
+neighbor . g7321
+failing-states . 
+1 . 124
+passing-states . 
+0 . 65
+1 . 78
+==
+Candidate 5
+site . I14139
+polarity . 1
+match_score . 91.67
+neighbor . g7548
+failing-states . 
+1 . 124
+passing-states . 
+0 . 65
+1 . 78
+==
+Candidate 6
+site . g7548->I14139
+polarity . 1
+match_score . 91.67
+neighbor . I13828
+failing-states . 
+0 . 124
+passing-states . 
+1 . 65
+0 . 78
+==
+Candidate 7
+site . g7756
+polarity . 1
+match_score . 91.67
+neighbor . I14139
+failing-states . 
+0 . 124
+passing-states . 
+1 . 65
+0 . 78
+==
+Candidate 8
+site . I14139->g7756
+polarity . 1
+match_score . 91.67
+neighbor . g7548
+failing-states . 
+1 . 124
+passing-states . 
+0 . 65
+1 . 78
+==
+Candidate 9
+site . g7055
+polarity . 1
+match_score . 88.89
+neighbor . g6517
+failing-states . 
+0 . 124
+passing-states . 
+1 . 143
+==
+Candidate 10
+site . g6517->g7055
+polarity . 1
+match_score . 88.89
+neighbor . g799 I11701
+failing-states . 
+11 . 63
+01 . 61
+passing-states . 
+10 . 65
+00 . 78
+==
+Candidate 11
+site . I13103
+polarity . 1
+match_score . 88.89
+neighbor . g7055
+failing-states . 
+1 . 124
+passing-states . 
+0 . 143
+==
+Candidate 12
+site . g7055->I13103
+polarity . 1
+match_score . 88.89
+neighbor . g6517
+failing-states . 
+0 . 124
+passing-states . 
+1 . 143
+==
+Candidate 13
+site . g7187
+polarity . 1
+match_score . 88.89
+neighbor . I13103 g6990
+failing-states . 
+00 . 124
+passing-states . 
+11 . 65
+10 . 78
+==
+Candidate 14
+site . I13103->g7187
+polarity . 1
+match_score . 88.89
+neighbor . g7055
+failing-states . 
+1 . 124
+passing-states . 
+0 . 143
+==
+Candidate 15
+site . g7187->g7321
+polarity . 1
+match_score . 88.89
+neighbor . I13103 g6990
+failing-states . 
+00 . 124
+passing-states . 
+11 . 65
+10 . 78
+==

@@ -1,0 +1,62 @@
+run_diagnosis ./tmax_fail/2725.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 61 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2725.fail
+ #failing_pat=57, #failures=61, #defects=3, #faults=7, CPU_time=0.22
+ Simulated : #failing_pat=57, #passing_pat=96, #failures=61
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=7, #passing_pat=146, #failures=7
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=7, passing=146>
+ sa01   DS   g_I11757/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=7, passing=146>
+ sa01   DS   g_g6571/ZN   (NAND2_X1)
+ sa01   --   g_I12609/ZN   (INV_X1)
+ sa01   --   g_I12609/A   (INV_X1)
+ sa01   --   g_g6918/ZN   (INV_X1)
+ sa01   --   g_g6918/A   (INV_X1)
+ sa01   --   g_I12906/ZN   (INV_X1)
+ sa01   --   g_I12906/A   (INV_X1)
+ sa01   --   g_g7106/ZN   (INV_X1)
+ sa01   --   g_g7106/A   (INV_X1)
+ sa01   --   g_tmp_wire_249/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=7, passing=146>
+ sa01   DS   g_tmp_wire_249/Z   (MUX2_X1)
+ sa01   --   g_g1084/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=7, passing=146>
+ sa01   DS   g_g1758/ZN   (INV_X1)
+ sa01   --   g_g1758/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=2, #failing_pat=6, #passing_pat=147, #failures=6
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=147>
+ sa01   DS   g_g5708/ZN   (OR2_X1)
+ sa01   --   g_I10773/ZN   (INV_X1)
+ sa01   --   g_I10773/A   (INV_X1)
+ sa01   --   g_g6136/ZN   (INV_X1)
+ sa01   --   g_g6136/A   (INV_X1)
+ sa01   --   g_I11740/ZN   (INV_X1)
+ sa01   --   g_I11740/A   (INV_X1)
+ sa01   --   g_g6566/ZN   (INV_X1)
+ sa01   --   g_g6566/A   (INV_X1)
+ sa01   --   g_I12439/ZN   (INV_X1)
+ sa01   --   g_I12439/A   (INV_X1)
+ sa01   --   g_g6856/ZN   (INV_X1)
+ sa01   --   g_g6856/A   (INV_X1)
+ sa01   --   g_tmp_wire_268/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=147>
+ sa01   DS   g_tmp_wire_268/Z   (MUX2_X1)
+ sa01   --   g_g1153/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 3: stuck fault model, #faults=1, #failing_pat=38, #passing_pat=115, #failures=38
+ ------------------------------------------------------------------------------
+ match=95.00%, #explained patterns: <failing=38, passing=112>
+ sa01   DS   g_g1367/seq_DFF_X10/IQ   (seq_DFF_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2726.diag

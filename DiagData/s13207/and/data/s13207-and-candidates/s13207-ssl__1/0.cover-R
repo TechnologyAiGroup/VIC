@@ -1,0 +1,187 @@
+==
+Candidate 0
+site . I8268
+polarity . 1
+match_score . 82.11
+neighbor . g2801
+failing-states . 
+0 . 114
+passing-states . 
+0 . 103
+1 . 50
+==
+Candidate 1
+site . g2801->I8268
+polarity . 1
+match_score . 82.11
+neighbor . I6540 I6539
+failing-states . 
+11 . 36
+01 . 47
+10 . 31
+passing-states . 
+11 . 103
+10 . 24
+01 . 26
+==
+Candidate 2
+site . g4303
+polarity . 1
+match_score . 82.11
+neighbor . I8268
+failing-states . 
+1 . 114
+passing-states . 
+1 . 103
+0 . 50
+==
+Candidate 3
+site . I8268->g4303
+polarity . 1
+match_score . 82.11
+neighbor . g2801
+failing-states . 
+0 . 114
+passing-states . 
+0 . 103
+1 . 50
+==
+Candidate 4
+site . I8880
+polarity . 1
+match_score . 82.11
+neighbor . g4303
+failing-states . 
+0 . 114
+passing-states . 
+0 . 103
+1 . 50
+==
+Candidate 5
+site . g4303->I8880
+polarity . 1
+match_score . 82.11
+neighbor . I8268
+failing-states . 
+1 . 114
+passing-states . 
+1 . 103
+0 . 50
+==
+Candidate 6
+site . I8880->g4655
+polarity . 1
+match_score . 82.11
+neighbor . g4303
+failing-states . 
+0 . 114
+passing-states . 
+0 . 103
+1 . 50
+==
+Candidate 7
+site . g2801
+polarity . 1
+match_score . 76.15
+neighbor . I6540 I6539
+failing-states . 
+11 . 36
+01 . 47
+10 . 31
+passing-states . 
+11 . 103
+10 . 24
+01 . 26
+==
+Candidate 8
+site . g2555
+polarity . 1
+match_score . 76.15
+neighbor . I6538 g2557 g936
+failing-states . 
+010 . 10
+111 . 47
+100 . 31
+101 . 26
+passing-states . 
+101 . 67
+010 . 36
+100 . 24
+111 . 26
+==
+Candidate 9
+site . g936->g2555
+polarity . 1
+match_score . 76.15
+neighbor . g2557
+failing-states . 
+1 . 57
+0 . 57
+passing-states . 
+0 . 91
+1 . 62
+==
+Candidate 10
+site . I6540
+polarity . 1
+match_score . 63.55
+neighbor . g2557 I6539 I6538
+failing-states . 
+110 . 10
+111 . 47
+001 . 31
+011 . 26
+passing-states . 
+011 . 67
+110 . 36
+001 . 24
+111 . 26
+==
+Candidate 11
+site . I6540->g2801
+polarity . 1
+match_score . 63.55
+neighbor . g2557 I6539 I6538
+failing-states . 
+110 . 10
+111 . 47
+001 . 31
+011 . 26
+passing-states . 
+011 . 67
+110 . 36
+001 . 24
+111 . 26
+==
+Candidate 12
+site . I6539
+polarity . 1
+match_score . 60.55
+neighbor . g2555 I6540 I6538
+failing-states . 
+110 . 10
+001 . 47
+111 . 31
+011 . 26
+passing-states . 
+011 . 67
+110 . 36
+111 . 24
+001 . 26
+==
+Candidate 13
+site . I6539->g2801
+polarity . 1
+match_score . 60.55
+neighbor . g2555 I6540 I6538
+failing-states . 
+110 . 10
+001 . 47
+111 . 31
+011 . 26
+passing-states . 
+011 . 67
+110 . 36
+111 . 24
+001 . 26
+==

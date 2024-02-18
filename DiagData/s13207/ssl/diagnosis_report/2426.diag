@@ -1,0 +1,49 @@
+run_diagnosis ./tmax_fail/2426.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 187 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2426.fail
+ #failing_pat=121, #failures=187, #defects=2, #faults=3, CPU_time=0.05
+ Simulated : #failing_pat=121, #passing_pat=96, #failures=187
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=63, #passing_pat=154, #failures=63
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=63, passing=208>
+ sa01   DS   g_g8584/ZN   (AND2_X1)
+ sa01   --   g_I15010/ZN   (INV_X1)
+ sa01   --   g_I15010/A   (INV_X1)
+ sa01   --   g_g8800/ZN   (INV_X1)
+ sa01   --   g_g8800/A   (INV_X1)
+ sa01   --   g_I15334/ZN   (INV_X1)
+ sa01   --   g_I15334/A   (INV_X1)
+ sa01   --   g_g8916/ZN   (INV_X1)
+ sa01   --   g_g8916/A   (INV_X1)
+ sa01   --   g_I15394/ZN   (INV_X1)
+ sa01   --   g_I15394/A   (INV_X1)
+ sa01   --   g_g8960/ZN   (INV_X1)
+ sa01   --   g_g8960/A   (INV_X1)
+ sa01   --   g_tmp_wire_195/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=63, passing=208>
+ sa01   DS   g_tmp_wire_195/Z   (MUX2_X1)
+ sa01   --   g_g1472/seq_DFF_X10/nextstate   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=38, #passing_pat=179, #failures=38
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=38, passing=233>
+ sa01   DS   g_g8779/ZN   (AND2_X1)
+ sa01   --   g_I15324/ZN   (INV_X1)
+ sa01   --   g_I15324/A   (INV_X1)
+ sa01   --   g_g8910/ZN   (INV_X1)
+ sa01   --   g_g8910/A   (INV_X1)
+ sa01   --   g_I15478/ZN   (INV_X1)
+ sa01   --   g_I15478/A   (INV_X1)
+ sa01   --   g_g9018/ZN   (INV_X1)
+ sa01   --   g_g9018/A   (INV_X1)
+ sa01   --   g_I15522/ZN   (INV_X1)
+ sa01   --   g_I15522/A   (INV_X1)
+ sa01   --   g_g9036/ZN   (INV_X1)
+ sa01   --   g_g9036/A   (INV_X1)
+ sa01   --   g_tmp_wire_196/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2427.diag

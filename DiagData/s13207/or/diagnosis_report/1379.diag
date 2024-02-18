@@ -1,0 +1,69 @@
+run_diagnosis ./tmax_fail/1379.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 83 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1379.fail
+ #failing_pat=83, #failures=83, #defects=2, #faults=12, CPU_time=0.12
+ Simulated : #failing_pat=83, #passing_pat=96, #failures=83
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=11, #failing_pat=58, #passing_pat=121, #failures=58
+ ------------------------------------------------------------------------------
+ match=56.90%, #explained patterns: <failing=33, passing=121>
+ sa01   DS   g_g6284/ZN   (NAND2_X1)
+ sa01   --   g_I11781/ZN   (INV_X1)
+ sa01   --   g_I11781/A   (INV_X1)
+ sa01   --   g_g6587/ZN   (INV_X1)
+ sa01   --   g_g6587/A   (INV_X1)
+ sa01   --   g_I12493/ZN   (INV_X1)
+ sa01   --   g_I12493/A   (INV_X1)
+ sa01   --   g_g6874/ZN   (INV_X1)
+ sa01   --   g_g6874/A   (INV_X1)
+ sa01   --   g_tmp_wire_129/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ match=56.90%, #explained patterns: <failing=33, passing=121>
+ sa01   DS   g_I7864/ZN   (INV_X1)
+ sa01   --   g_I7864/A   (INV_X1)
+ sa01   --   g_g4079/ZN   (INV_X1)
+ sa01   --   g_g4079/A   (INV_X1)
+ sa01   --   g_g4898/ZN   (INV_X1)
+ sa01   --   g_g4898/A   (INV_X1)
+ sa01   --   g_g5469/ZN   (INV_X1)
+ sa01   --   g_g5469/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=55.17%, #explained patterns: <failing=32, passing=121>
+ sa01   DS   g_I11163/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=53.23%, #explained patterns: <failing=32, passing=121>
+ sa01   DS   g_g1750/ZN   (INV_X1)
+ sa01   --   g_g1750/A   (INV_X1)
+ sa01   --   g_g3812/ZN   (INV_X1)
+ sa01   --   g_g3812/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=46.55%, #explained patterns: <failing=27, passing=121>
+ sa01   DS   g_I11165/ZN   (NAND2_X1)
+ sa01   --   g_g6284/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=44.83%, #explained patterns: <failing=26, passing=121>
+ sa01   DS   g_I11165/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=44.83%, #explained patterns: <failing=26, passing=121>
+ sa01   DS   g_I11163/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=34.48%, #explained patterns: <failing=20, passing=121>
+ sa01   DS   g_I11164/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=34.48%, #explained patterns: <failing=20, passing=121>
+ sa01   DS   g_I11163/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=22.41%, #explained patterns: <failing=13, passing=121>
+ sa01   DS   g_I11165/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=12.07%, #explained patterns: <failing=7, passing=121>
+ sa01   DS   g_I11164/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=25, #passing_pat=154, #failures=25
+ ------------------------------------------------------------------------------
+ match=96.15%, #explained patterns: <failing=25, passing=153>
+ sa01   DS   g_g1383/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1382.diag

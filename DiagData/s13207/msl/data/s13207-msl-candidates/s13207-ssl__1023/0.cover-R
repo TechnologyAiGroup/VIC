@@ -1,0 +1,197 @@
+==
+Candidate 0
+site . g4812
+polarity . 1
+match_score . 54.13
+neighbor . g2490 g4237
+failing-states . 
+00 . 52
+01 . 64
+10 . 26
+11 . 28
+passing-states . 
+11 . 49
+10 . 42
+01 . 5
+00 . 1
+==
+Candidate 1
+site . I9935
+polarity . 1
+match_score . 54.13
+neighbor . g4812
+failing-states . 
+0 . 52
+1 . 118
+passing-states . 
+1 . 96
+0 . 1
+==
+Candidate 2
+site . g4812->I9935
+polarity . 1
+match_score . 54.13
+neighbor . g2490 g4237
+failing-states . 
+00 . 52
+01 . 64
+10 . 26
+11 . 28
+passing-states . 
+11 . 49
+10 . 42
+01 . 5
+00 . 1
+==
+Candidate 3
+site . g5523
+polarity . 1
+match_score . 54.13
+neighbor . I9935
+failing-states . 
+1 . 52
+0 . 118
+passing-states . 
+0 . 96
+1 . 1
+==
+Candidate 4
+site . I9935->g5523
+polarity . 1
+match_score . 54.13
+neighbor . g4812
+failing-states . 
+0 . 52
+1 . 118
+passing-states . 
+1 . 96
+0 . 1
+==
+Candidate 5
+site . I10295
+polarity . 1
+match_score . 54.13
+neighbor . g5523
+failing-states . 
+0 . 52
+1 . 118
+passing-states . 
+1 . 96
+0 . 1
+==
+Candidate 6
+site . g5523->I10295
+polarity . 1
+match_score . 54.13
+neighbor . I9935
+failing-states . 
+1 . 52
+0 . 118
+passing-states . 
+0 . 96
+1 . 1
+==
+Candidate 7
+site . g5746
+polarity . 1
+match_score . 54.13
+neighbor . I10295
+failing-states . 
+1 . 52
+0 . 118
+passing-states . 
+0 . 96
+1 . 1
+==
+Candidate 8
+site . I10295->g5746
+polarity . 1
+match_score . 54.13
+neighbor . g5523
+failing-states . 
+0 . 52
+1 . 118
+passing-states . 
+1 . 96
+0 . 1
+==
+Candidate 9
+site . g4237
+polarity . 1
+match_score . 37.61
+neighbor . I8152 g2490 I8151
+failing-states . 
+101 . 52
+100 . 64
+111 . 26
+110 . 28
+passing-states . 
+110 . 49
+111 . 42
+100 . 5
+101 . 1
+==
+Candidate 10
+site . g4237->g4812
+polarity . 1
+match_score . 37.61
+neighbor . I8152 g2490 I8151
+failing-states . 
+101 . 52
+100 . 64
+111 . 26
+110 . 28
+passing-states . 
+110 . 49
+111 . 42
+100 . 5
+101 . 1
+==
+Candidate 11
+site . g3229
+polarity . 1
+match_score . 37.61
+neighbor . I8150 g1728 g38 g2015
+failing-states . 
+0010 . 30
+0011 . 35
+1100 . 14
+1000 . 41
+1001 . 30
+0111 . 6
+0110 . 7
+1101 . 7
+passing-states . 
+1001 . 20
+0010 . 17
+1000 . 15
+0111 . 11
+1100 . 7
+1101 . 12
+0011 . 8
+0110 . 7
+==
+Candidate 12
+site . I8152
+polarity . 1
+match_score . 36.7
+neighbor . I8150 g38 I8151
+failing-states . 
+011 . 78
+100 . 92
+passing-states . 
+100 . 54
+011 . 43
+==
+Candidate 13
+site . I8152->g4237
+polarity . 1
+match_score . 36.7
+neighbor . I8150 g38 I8151
+failing-states . 
+011 . 78
+100 . 92
+passing-states . 
+100 . 54
+011 . 43
+==

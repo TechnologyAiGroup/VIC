@@ -1,0 +1,45 @@
+run_diagnosis ./tmax_fail/537.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 120 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/537.fail
+ #failing_pat=56, #failures=120, #defects=2, #faults=2, CPU_time=0.05
+ Simulated : #failing_pat=56, #passing_pat=96, #failures=120
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=29, #passing_pat=123, #failures=29
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=29, passing=147>
+ sa01   DS   g_g7240/ZN   (AND2_X1)
+ sa01   --   g_I13669/ZN   (INV_X1)
+ sa01   --   g_I13669/A   (INV_X1)
+ sa01   --   g_g7497/ZN   (INV_X1)
+ sa01   --   g_g7497/A   (INV_X1)
+ sa01   --   g_I13776/ZN   (INV_X1)
+ sa01   --   g_I13776/A   (INV_X1)
+ sa01   --   g_g7532/ZN   (INV_X1)
+ sa01   --   g_g7532/A   (INV_X1)
+ sa01   --   g_I14193/ZN   (INV_X1)
+ sa01   --   g_I14193/A   (INV_X1)
+ sa01   --   g_g7774/ZN   (INV_X1)
+ sa01   --   g_g7774/A   (INV_X1)
+ sa01   --   g_tmp_wire_190/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=19, #passing_pat=133, #failures=19
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=19, passing=157>
+ sa01   DS   g_g7242/ZN   (AND2_X1)
+ sa01   --   g_I13672/ZN   (INV_X1)
+ sa01   --   g_I13672/A   (INV_X1)
+ sa01   --   g_g7498/ZN   (INV_X1)
+ sa01   --   g_g7498/A   (INV_X1)
+ sa01   --   g_I13782/ZN   (INV_X1)
+ sa01   --   g_I13782/A   (INV_X1)
+ sa01   --   g_g7534/ZN   (INV_X1)
+ sa01   --   g_g7534/A   (INV_X1)
+ sa01   --   g_I14196/ZN   (INV_X1)
+ sa01   --   g_I14196/A   (INV_X1)
+ sa01   --   g_g7775/ZN   (INV_X1)
+ sa01   --   g_g7775/A   (INV_X1)
+ sa01   --   g_tmp_wire_191/A   (MUX2_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/538.diag

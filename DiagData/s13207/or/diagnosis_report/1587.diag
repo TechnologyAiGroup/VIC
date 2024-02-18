@@ -1,0 +1,34 @@
+run_diagnosis ./tmax_fail/1587.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 152 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/1587.fail
+ #failing_pat=88, #failures=152, #defects=2, #faults=2, CPU_time=0.12
+ Simulated : #failing_pat=88, #passing_pat=96, #failures=152
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=64, #passing_pat=120, #failures=128
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=64, passing=120>
+ sa01   DS   g_I6363/ZN   (INV_X1)
+ sa01   --   g_I6363/A   (INV_X1)
+ sa01   --   g_g2539/ZN   (INV_X1)
+ sa01   --   g_g2539/A   (INV_X1)
+ sa01   --   g_I7095/ZN   (INV_X1)
+ sa01   --   g_I7095/A   (INV_X1)
+ sa01   --   g_g3630/ZN   (INV_X1)
+ sa01   --   g_g3630/A   (INV_X1)
+ sa01   --   g_I8449/ZN   (INV_X1)
+ sa01   --   g_I8449/A   (INV_X1)
+ sa01   --   g_g4443/ZN   (INV_X1)
+ sa01   --   g_g4443/A   (INV_X1)
+ sa01   --   g_I9217/ZN   (INV_X1)
+ sa01   --   g_I9217/A   (INV_X1)
+ sa01   --   g_g4873/ZN   (INV_X1)
+ sa01   --   g_g4873/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=24, #passing_pat=160, #failures=24
+ ------------------------------------------------------------------------------
+ match=96.00%, #explained patterns: <failing=24, passing=159>
+ sa01   DS   g_g1371/seq_DFF_X10/IQ   (seq_DFF_X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/1588.diag
